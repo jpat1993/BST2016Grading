@@ -1,0 +1,1226 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"niya",
+				"niyamfs1"
+			],
+			[
+				"cla",
+				"classList"
+			],
+			[
+				"err",
+				"errorMessage"
+			],
+			[
+				"o",
+				"overlap"
+			],
+			[
+				"e",
+				"e"
+			],
+			[
+				"String",
+				"StringBuffer"
+			],
+			[
+				"prin",
+				"printStackTrace"
+			],
+			[
+				"con",
+				"concurrentHash"
+			],
+			[
+				"MAX",
+				"maxHundredUrls"
+			],
+			[
+				"hel",
+				"helperRight"
+			],
+			[
+				"merge",
+				"mergesort"
+			],
+			[
+				"P",
+				"PriorityQueue"
+			],
+			[
+				"sim",
+				"simAnnealing"
+			],
+			[
+				"Ar",
+				"Arraylist"
+			],
+			[
+				"is",
+				"isEmpty"
+			],
+			[
+				"S",
+				"System"
+			],
+			[
+				"sorte",
+				"sortedVertices"
+			],
+			[
+				"sor",
+				"sort"
+			],
+			[
+				"so",
+				"sortedVertices"
+			],
+			[
+				"ver",
+				"vertices"
+			],
+			[
+				"entry",
+				"entrySet"
+			],
+			[
+				"en",
+				"entrySet"
+			],
+			[
+				"Arry",
+				"Arraylist"
+			],
+			[
+				"Int",
+				"Integer"
+			],
+			[
+				"del",
+				"deltaSize"
+			],
+			[
+				"li",
+				"listofVertices"
+			],
+			[
+				"list",
+				"listofVertices"
+			],
+			[
+				"pri",
+				"println"
+			],
+			[
+				"not",
+				"notVC"
+			],
+			[
+				"vert",
+				"vertices"
+			],
+			[
+				"good",
+				"goodVertex"
+			],
+			[
+				"cu",
+				"curr"
+			],
+			[
+				"r",
+				"randomno"
+			],
+			[
+				"el",
+				"elapsedFinal"
+			],
+			[
+				"temp",
+				"tempVertex"
+			],
+			[
+				"maxD",
+				"maxDegreeVertex"
+			],
+			[
+				"ma",
+				"maxDegreeVertex"
+			],
+			[
+				"print",
+				"printEdge"
+			],
+			[
+				"get",
+				"getEdges"
+			],
+			[
+				"lis",
+				"listVertices"
+			],
+			[
+				"de",
+				"deltaSize"
+			],
+			[
+				"in",
+				"increment"
+			],
+			[
+				"check",
+				"checkWin"
+			],
+			[
+				"n",
+				"numberPopped"
+			],
+			[
+				"to",
+				"totalBlocksinSet"
+			],
+			[
+				"blo",
+				"blocksPerSet"
+			],
+			[
+				"ac",
+				"accesses"
+			],
+			[
+				"tot",
+				"totalMisses"
+			],
+			[
+				"read",
+				"read_misses"
+			],
+			[
+				"write",
+				"write_misses"
+			],
+			[
+				"lr",
+				"lru_point"
+			],
+			[
+				"gl",
+				"clock_global"
+			],
+			[
+				"lru",
+				"lru_access"
+			],
+			[
+				"tim",
+				"timeAccess"
+			],
+			[
+				"bl",
+				"blocksPerSet"
+			],
+			[
+				"clock",
+				"clock_global"
+			],
+			[
+				"u",
+				"uint64_t"
+			],
+			[
+				"set",
+				"setVar"
+			],
+			[
+				"bloc",
+				"blockVar"
+			],
+			[
+				"se",
+				"setVar"
+			],
+			[
+				"cache",
+				"cacheVar"
+			],
+			[
+				"block",
+				"blockSize"
+			],
+			[
+				"tota",
+				"totalBlocksinSet"
+			],
+			[
+				"double",
+				"double"
+			],
+			[
+				"st",
+				"start"
+			],
+			[
+				"max",
+				"maxVal"
+			],
+			[
+				"b",
+				"b"
+			],
+			[
+				"out",
+				"output2"
+			],
+			[
+				"spl",
+				"splitVal"
+			],
+			[
+				"re",
+				"request_vpn"
+			],
+			[
+				"di",
+				"dirty"
+			],
+			[
+				"requ",
+				"request_vpn"
+			],
+			[
+				"vict",
+				"victim_pfn"
+			],
+			[
+				"vic",
+				"victim_vpn"
+			],
+			[
+				"tl",
+				"tlb_clearone"
+			],
+			[
+				"page",
+				"pageFaultMem"
+			],
+			[
+				"Mem",
+				"MEMORY_ACCESS_TIME"
+			],
+			[
+				"curre",
+				"current_pagetable"
+			],
+			[
+				"po",
+				"possibleScores"
+			],
+			[
+				"Arra",
+				"ArrayList"
+			],
+			[
+				"Ara",
+				"ArrayList"
+			],
+			[
+				"mst",
+				"mstGraph"
+			],
+			[
+				"Fil",
+				"FileNotFoundException"
+			],
+			[
+				"grap",
+				"graph_file"
+			],
+			[
+				"from",
+				"fromVertex"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"cent",
+				"centersend"
+			],
+			[
+				"app",
+				"appendChild"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"cur",
+				"current_fs"
+			],
+			[
+				"cure",
+				"current_fs"
+			],
+			[
+				"current",
+				"current_fs"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"next",
+				"next_fs"
+			],
+			[
+				"nex",
+				"next_fs"
+			],
+			[
+				"O",
+				"ObjectID"
+			],
+			[
+				"g",
+				"getCurrentStep"
+			],
+			[
+				"curr",
+				"currentIndex"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"js",
+				"js"
+			],
+			[
+				"saveS",
+				"saveShloaks"
+			],
+			[
+				"calloc",
+				"my_calloc"
+			],
+			[
+				"pr",
+				"freelist_print"
+			],
+			[
+				"test",
+				"testarray"
+			],
+			[
+				"array",
+				"array2"
+			],
+			[
+				"size",
+				"sizeof"
+			],
+			[
+				"bu",
+				"buddyBlock"
+			],
+			[
+				"fre",
+				"freelist"
+			],
+			[
+				"dest",
+				"destination"
+			],
+			[
+				"fr",
+				"freelist_print"
+			],
+			[
+				"pre",
+				"prev"
+			],
+			[
+				"prev",
+				"prevOne"
+			],
+			[
+				"budd",
+				"buddyblock"
+			],
+			[
+				"end",
+				"endWhile"
+			],
+			[
+				"want",
+				"wantedIndex"
+			],
+			[
+				"spli",
+				"splitupBlock"
+			],
+			[
+				"new",
+				"newBlocks"
+			],
+			[
+				"sp",
+				"split"
+			],
+			[
+				"wan",
+				"wantedIndex"
+			],
+			[
+				"my",
+				"my_malloc"
+			],
+			[
+				"free",
+				"freelist"
+			],
+			[
+				"SR",
+				"SBRK_SIZE"
+			],
+			[
+				"num",
+				"num_bytes"
+			],
+			[
+				"merg",
+				"mergeBlock"
+			],
+			[
+				"buddy",
+				"buddyBit"
+			],
+			[
+				"meta",
+				"metadata_t"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2848,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/login.js",
+			"settings":
+			{
+				"buffer_size": 2613,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/register.html",
+			"settings":
+			{
+				"buffer_size": 4672,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/recom.html",
+			"settings":
+			{
+				"buffer_size": 2205,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/rc.html",
+			"settings":
+			{
+				"buffer_size": 7133,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/essay.html",
+			"settings":
+			{
+				"buffer_size": 4937,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/balaks.html",
+			"settings":
+			{
+				"buffer_size": 1134,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/register.js",
+			"settings":
+			{
+				"buffer_size": 2052,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Open..."
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 60.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/BST2016Grading/js/parse-1.6.14.min.js",
+		"/C/xampp/htdocs/BST2016Grading/js/rc.js",
+		"/C/xampp/htdocs/BST2016Grading/bstgrading",
+		"/C/xampp/htdocs/BST2016Grading/index.html",
+		"/C/xampp/htdocs/BST2016Grading/bstgrading.sublime-workspace",
+		"/C/xampp/htdocs/BST2016Grading/js/essay.js",
+		"/C/xampp2/htdocs/BSTWebsite2/js/app.js",
+		"/C/xampp2/htdocs/BSTWebsite2/index.html",
+		"/C/xampp/htdocs/BST2016/css/bootstrap.min.css",
+		"/C/xampp/htdocs/BST2016/css/main.css",
+		"/C/xampp/htdocs/BST2016/app/index.html",
+		"/C/xampp/htdocs/BST2016/app/welcome/welcome.js",
+		"/C/xampp/htdocs/BST2016/app/register/register.js",
+		"/C/xampp/htdocs/BST2016/app/app.js",
+		"/C/xampp/htdocs/BST2016/app/home/home.js",
+		"/C/xampp/htdocs/BST2016/app/addPost/addPost.js",
+		"/C/xampp/htdocs/BSTWebsite/index.html",
+		"/C/xampp/htdocs/BSTWebsite/js/app.js",
+		"/C/Users/Jay Patel/Desktop/dump.sh",
+		"/C/xampp/htdocs/BST2016/app/view1/view1.html",
+		"/C/xampp/htdocs/BST2016/app/view1/view1.js",
+		"/C/xampp/htdocs/BST2016/app/test/test.js",
+		"/C/xampp/htdocs/BST2016/app/register/register.html",
+		"/C/xampp/htdocs/BST2016/app/home/home.html",
+		"/C/xampp/htdocs/Test/index.html",
+		"/C/xampp/htdocs/Test/google-sheet.js",
+		"/C/Users/Jay Patel/Desktop/hello.js",
+		"/C/xampp/htdocs/BSTWebsite/bstwebsite.sublime-workspace",
+		"/C/xampp2/htdocs/BSTWebsite/js/app.js",
+		"/C/xampp2/htdocs/BSTWebsite/index.html",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/maxHundredUrls.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/interval.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/Codec.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/cs1332/recitation11/src/TestRegexPatterns.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/cs1332/recitation11/src/RegexAssignment.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/RegexTest.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/cs1332/hw05/hw05/src/HashMap.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/allCombos.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 4/vmaudgalya3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 4/README.txt",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_jpatel75.zip/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 4/burlap-master/burlap-master/src/burlap/shell/BurlapShell.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/README.md",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/README.txt",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/palindrome.java",
+		"/C/Users/Jay Patel/Documents/GitHub/jpat1993.github.io/index.html",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 4/Sample/kuppuluri3/kuppuluri3/mdp.py",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 4/Sample/kuppuluri3/kuppuluri3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Grades.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/Datasets/car_em.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/Datasets/car_kmeans.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/Datasets/car_kmenas.model",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/Datasets/car_nn.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/Datasets/car_lda.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 1/vmaudgalya3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/test.model",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 3/test.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/car/car.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/car/train.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/car/test.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/winequalitywhite.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/train.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/test.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/NQueensTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/MaxKColoringTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/TravelingSalesmanTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/AbaloneTest.java",
+		"/C/xampp/htdocs/Jays-Website/index.html",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/vmaudgalya3/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/FourPeaksTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/CountOnesTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/ga/NQueensFitnessFunction.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/ga/NQueensBoardGame.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/FlipFlopTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/vmaudgalya3/ABAGAIL/src/opt/test/AbaloneTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/func/nn/backprop/BackPropagationNetworkFactory.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/test/abalone.txt",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/genUrls.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/shared/SumOfSquaresError.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/vmaudgalya3/ABAGAIL/src/opt/OptimizationAlgorithm.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/func/nn/backprop/BackPropagationNetwork.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/data/train.csv",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/data/test.csv",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/data/train.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/src/opt/data/test.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/SA.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/RHC.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/data/car/train.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/data/car/test.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/test/abalone.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/test/AbaloneTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/RandomizedHillClimbing.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/func/nn/feedfwd/FeedForwardNetwork.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/func/nn/backprop/BackPropagationNetwork.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/opt/test/AbaloneTest.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/project2/OptimizationCountOnes.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/project2/readme.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/README.txt",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/example/NeuralNetworkEvaluationFunction.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/build.xml",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/README.md",
+		"/C/Users/Jay Patel/Desktop/CS 4235/HWs/Lab One/nmapOutput.txt",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/ConcurrentHash.java",
+		"/C/Users/Jay Patel/Documents/School Stuff/Fall 2015/CX 4140/Project/Code/simAnnealing.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/allCombos.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/reverseWords.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/isScorePossible.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/genUrls.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/mergesort.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/bitScaling.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/bitCount.java",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/maxHundredUrls.java",
+		"/C/Users/Jay Patel/Documents/School Stuff/Fall 2015/CX 4140/Project/FINAL TURNIN/group_C−jpatel75/Code/LSSA.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/winedata.arff",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/car/cardata.arff",
+		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/subArray.java",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/README",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/README_Experiment_Gui",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/documentation.css",
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/supervised_learning-master/supervised_learning-master/decision_tree.py",
+		"/C/Users/Jay Patel/Desktop/VIP/sql.py",
+		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/hello.js",
+		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/index.html",
+		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/HelloClass.java",
+		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/HelloWorldEndpoints.java"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\lockeroom\\system\\database"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Montserrat",
+			"gotostart",
+			"Canada_BST_2016",
+			"startfs",
+			"checkif",
+			"select an option",
+			"select",
+			"input",
+			"example",
+			"hide",
+			"();",
+			"/>\n",
+			"eat",
+			"niyam",
+			"fon",
+			"font",
+			"fonts",
+			"parse",
+			"checkifValid",
+			"getInfo",
+			"loadDetails",
+			"loadDetails\n",
+			"gotoStart",
+			"check",
+			"build",
+			"form",
+			"cloud",
+			"best_temp",
+			"runBackprop",
+			"runSA",
+			"determineSAParams",
+			"determineNNParams",
+			"runSA",
+			"determineSAParams",
+			"shouldFindSAParams",
+			"determineNNParams",
+			"shouldFindNNParams",
+			"measure",
+			"example",
+			"DataSet",
+			"getInstances",
+			"evaluateNetwork",
+			"df",
+			"Instance optimalWeights = oa.getOptimal();\n    network.setWeights(optimalWeights.getData());\n",
+			"train",
+			"evaluateNetwork",
+			"factory",
+			"determineSAParams",
+			"makeTestTrainSets",
+			"poker",
+			"System.out.printl",
+			"{\n",
+			"        \n",
+			"result",
+			"getEdges",
+			"size",
+			"\n        System.out.println(\"sorted map:\");\n\n        for( Map.Entry<ArrayList<String>, String> entry : navigableMap.entrySet() ) {\n            System.out.println(entry.getValue() + \" => \" + entry.getKey() );\n        }",
+			"sortedVertices",
+			"());\n",
+			") ",
+			"scheduler_type",
+			"access_time",
+			" param_data",
+			"request_vpn",
+			"current",
+			"username",
+			"db_connect",
+			"?>",
+			"username",
+			"db_connect",
+			";\n",
+			"{\n",
+			"\n        unvisited.remove(vex);",
+			"getDestination",
+			"compute",
+			"require",
+			"bootstrap_files",
+			"portfolio",
+			"@media",
+			"@\\media",
+			"@media",
+			"media",
+			"book",
+			"black",
+			"hover",
+			"h2",
+			"opacity",
+			"hr",
+			"text",
+			"animated",
+			"fadeInDownface",
+			"face",
+			"start",
+			"background",
+			"start",
+			"source",
+			"trigger",
+			";\n",
+			"searchresults",
+			"if val406 != 0:",
+			"example",
+			"})",
+			"name",
+			"form-group",
+			"button",
+			"buttons",
+			"/option",
+			"option",
+			"logmsk",
+			"<<<<<<< HEAD",
+			"addClass",
+			"next",
+			"prog",
+			"selected",
+			"disabled",
+			"values",
+			"first",
+			"next_fs",
+			"Confirmation",
+			"DB",
+			"msform",
+			"current_fs",
+			"getStep",
+			"        <script src=\"js/jquery.steps.js\"></script>",
+			"getSTep",
+			"insert",
+			"insert	",
+			"insert"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"br /",
+			"input type=\"checkbox\" name=\"center\" ",
+			"",
+			"input type=\"checkbox\" name=\"center\" ",
+			"",
+			"disabled",
+			"",
+			"replaceCount",
+			"elementCount",
+			"yOld",
+			"yNew",
+			"detectCollision",
+			"scoreString",
+			"ledges",
+			"LEDGE",
+			"numLedges"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 2848,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2521,
+								2521
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/login.js",
+					"settings":
+					{
+						"buffer_size": 2613,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								156,
+								164
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 126.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pages/register.html",
+					"settings":
+					{
+						"buffer_size": 4672,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages/recom.html",
+					"settings":
+					{
+						"buffer_size": 2205,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								198,
+								198
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "pages/rc.html",
+					"settings":
+					{
+						"buffer_size": 7133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								195,
+								195
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "pages/essay.html",
+					"settings":
+					{
+						"buffer_size": 4937,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								199,
+								199
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "pages/balaks.html",
+					"settings":
+					{
+						"buffer_size": 1134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/register.js",
+					"settings":
+					{
+						"buffer_size": 2052,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 23.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}
