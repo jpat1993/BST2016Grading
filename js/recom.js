@@ -1,7 +1,7 @@
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 
 
-var DB = "SEEBSTDB";
+var DB;
 var id;
 var name;
 var getter;
@@ -11,6 +11,7 @@ function loadRecom() {
     (function(global) {
         id =  global.localStorage.getItem("id");
         seva =  global.localStorage.getItem("seva");
+        DB = global.localStorage.getItem("DB");
     }(window));
 
     var tester = Parse.Object.extend(DB);
@@ -97,13 +98,19 @@ $(".recomsubmit").click(function(){
                   
                 }
 
+                if (lookup === "recom" && value !== "0") {
+                    check = "santRecCheck";
+                    details.set(check, true);
+                }
+
           };
 
-          if (count !== 2) {
-            checker = false;
-          }
-          check = seva + "recomcheck";
-          details.set(check, checker);
+          // if (count !== 2) {
+          //   checker = false;
+          // }
+          // check = "santRecCheck";
+          // details.set(check, checker);
+
           details.save(null, {
             success: function(details) {
               console.log("success" + name);

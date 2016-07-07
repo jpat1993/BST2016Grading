@@ -19,7 +19,7 @@
     
   </head>
 
-  <body>
+  <body onload="pickRegion()">
 
     <div class="register-card">
     <h1>Register</h1><br>
@@ -125,131 +125,79 @@
     <div class = "form-group hide" id = "MWcenter">
         <label class = "titles">Pick Your Centers</label><br />  
         <input type="checkbox" onClick="toggle(this)" /> Select All<br/>
-        <input type="checkbox" name="center" value="Albany">Albany<br />  
-        <input type="checkbox" name="center"  value="Atlanta">Atlanta<br />
-        <input type="checkbox" name="center"  value="Augusta">Augusta<br />
-        <input type="checkbox" name="center"  value="Birmingham">Birmingham<br />
-        <input type="checkbox" name="center"  value="Calhoun">Calhoun<br />
-        <input type="checkbox" name="center"  value="Columbia">Columbia<br />
-        <input type="checkbox" name="center"  value="Charlotte">Charlotte<br />
-        <input type="checkbox" name="center"  value="Chattanooga">Chattanooga<br />
-        <input type="checkbox" name="center"  value="Dothan/Ozark">Dothan/Ozark<br />
-        <input type="checkbox" name="center"  value="Gainesville ">Gainesville <br />
-        <input type="checkbox" name="center"  value="Greensboro">Greensboro<br />
-        <input type="checkbox" name="center"  value="Greenville">Greenville<br />
-        <input type="checkbox" name="center"  value="Huntsville">Huntsville<br />
-        <input type="checkbox" name="center"  value="Jacksonville ">Jacksonville <br />
-        <input type="checkbox" name="center"  value="Knoxville">Knoxville<br />
-        <input type="checkbox" name="center"  value="Melbourne">Melbourne<br />
-        <input type="checkbox" name="center"  value="Memphis">Memphis<br />
-        <input type="checkbox" name="center"  value="Miami">Miami<br />
-        <input type="checkbox" name="center"  value="Montgomery">Montgomery<br />
-        <input type="checkbox" name="center"  value="Myrtle Beach">Myrtle Beach<br />
-        <input type="checkbox" name="center"  value="Nashville">Nashville<br />
-        <input type="checkbox" name="center"  value="Orangeburg">Orangeburg<br />
-        <input type="checkbox" name="center"  value="Orlando">Orlando<br />
-        <input type="checkbox" name="center"  value="Perry">Perry<br />
-        <input type="checkbox" name="center"  value="Raleigh">Raleigh<br />
-        <input type="checkbox" name="center"  value="Savannah">Savannah<br />
-        <input type="checkbox" name="center"  value="Tampa">Tampa<br />
+        <input type="checkbox" name="center" value="Bloomington">Bloomington<br />  
+        <input type="checkbox" name="center"  value="Chicago">Chicago<br />
+        <input type="checkbox" name="center"  value="Cincinnati">Cincinnati<br />
+        <input type="checkbox" name="center"  value="Cleveland">Cleveland<br />
+        <input type="checkbox" name="center"  value="Columbus">Columbus<br />
+        <input type="checkbox" name="center"  value="Dayton">Dayton<br />
+        <input type="checkbox" name="center"  value="Des Moines">Des Moines<br />
+        <input type="checkbox" name="center"  value="Detroit">Detroit<br />
+        <input type="checkbox" name="center"  value="Evansville">Evansville<br />
+        <input type="checkbox" name="center"  value="Indianapolis">Indianapolis<br />
+        <input type="checkbox" name="center"  value="Kansas City">Kansas City<br />
+        <input type="checkbox" name="center"  value="Lexington">Lexington<br />
+        <input type="checkbox" name="center"  value="Louisville">Louisville<br />
+        <input type="checkbox" name="center"  value="Milwaukee">Milwaukee<br />
+        <input type="checkbox" name="center"  value="Minneapolis">Minneapolis<br />
+        <input type="checkbox" name="center"  value="Moline">Moline<br />
+        <input type="checkbox" name="center"  value="Munster">Munster<br />
+        <input type="checkbox" name="center"  value="Pittsburgh">Pittsburgh<br />
+        <input type="checkbox" name="center"  value="St. Louis">St. Louis<br />
+        <input type="checkbox" name="center"  value="Sterling Heights">Sterling Heights<br />
+        <input type="checkbox" name="center"  value="Wichita">Wichita<br />
     </div>
 
     <div class = "form-group hide" id = "SWcenter">
         <label class = "titles">Pick Your Centers</label><br />  
         <input type="checkbox" onClick="toggle(this)" /> Select All<br/>
-        <input type="checkbox" name="center" value="Albany">Albany<br />  
-        <input type="checkbox" name="center"  value="Atlanta">Atlanta<br />
-        <input type="checkbox" name="center"  value="Augusta">Augusta<br />
-        <input type="checkbox" name="center"  value="Birmingham">Birmingham<br />
-        <input type="checkbox" name="center"  value="Calhoun">Calhoun<br />
-        <input type="checkbox" name="center"  value="Columbia">Columbia<br />
-        <input type="checkbox" name="center"  value="Charlotte">Charlotte<br />
-        <input type="checkbox" name="center"  value="Chattanooga">Chattanooga<br />
-        <input type="checkbox" name="center"  value="Dothan/Ozark">Dothan/Ozark<br />
-        <input type="checkbox" name="center"  value="Gainesville ">Gainesville <br />
-        <input type="checkbox" name="center"  value="Greensboro">Greensboro<br />
-        <input type="checkbox" name="center"  value="Greenville">Greenville<br />
-        <input type="checkbox" name="center"  value="Huntsville">Huntsville<br />
-        <input type="checkbox" name="center"  value="Jacksonville ">Jacksonville <br />
-        <input type="checkbox" name="center"  value="Knoxville">Knoxville<br />
-        <input type="checkbox" name="center"  value="Melbourne">Melbourne<br />
-        <input type="checkbox" name="center"  value="Memphis">Memphis<br />
-        <input type="checkbox" name="center"  value="Miami">Miami<br />
-        <input type="checkbox" name="center"  value="Montgomery">Montgomery<br />
-        <input type="checkbox" name="center"  value="Myrtle Beach">Myrtle Beach<br />
-        <input type="checkbox" name="center"  value="Nashville">Nashville<br />
-        <input type="checkbox" name="center"  value="Orangeburg">Orangeburg<br />
-        <input type="checkbox" name="center"  value="Orlando">Orlando<br />
-        <input type="checkbox" name="center"  value="Perry">Perry<br />
-        <input type="checkbox" name="center"  value="Raleigh">Raleigh<br />
-        <input type="checkbox" name="center"  value="Savannah">Savannah<br />
-        <input type="checkbox" name="center"  value="Tampa">Tampa<br />
+        <input type="checkbox" name="center" value="Austin">Austin<br />  
+        <input type="checkbox" name="center"  value="Beaumont">Beaumont<br />
+        <input type="checkbox" name="center"  value="Clear Lake">Clear Lake<br />
+        <input type="checkbox" name="center"  value="Corpus Christi">Corpus Christi<br />
+        <input type="checkbox" name="center"  value="Dallas">Dallas<br />
+        <input type="checkbox" name="center"  value="Denver">Denver<br />
+        <input type="checkbox" name="center"  value="Houston">Houston<br />
+        <input type="checkbox" name="center"  value="Jackson">Jackson<br />
+        <input type="checkbox" name="center"  value="Little Rock">Little Rock<br />
+        <input type="checkbox" name="center"  value="Lubbock">Lubbock<br />
+        <input type="checkbox" name="center"  value="Midland">Midland<br />
+        <input type="checkbox" name="center"  value="New Orleans">New Orleans<br />
+        <input type="checkbox" name="center"  value="Oklahoma City">Oklahoma City<br />
+        <input type="checkbox" name="center"  value="San Antonio">San Antonio<br />
     </div>
 
 
     <div class = "form-group hide" id = "Wcenter">
         <label class = "titles">Pick Your Centers</label><br />  
         <input type="checkbox" onClick="toggle(this)" /> Select All<br/>
-        <input type="checkbox" name="center" value="Albany">Albany<br />  
-        <input type="checkbox" name="center"  value="Atlanta">Atlanta<br />
-        <input type="checkbox" name="center"  value="Augusta">Augusta<br />
-        <input type="checkbox" name="center"  value="Birmingham">Birmingham<br />
-        <input type="checkbox" name="center"  value="Calhoun">Calhoun<br />
-        <input type="checkbox" name="center"  value="Columbia">Columbia<br />
-        <input type="checkbox" name="center"  value="Charlotte">Charlotte<br />
-        <input type="checkbox" name="center"  value="Chattanooga">Chattanooga<br />
-        <input type="checkbox" name="center"  value="Dothan/Ozark">Dothan/Ozark<br />
-        <input type="checkbox" name="center"  value="Gainesville ">Gainesville <br />
-        <input type="checkbox" name="center"  value="Greensboro">Greensboro<br />
-        <input type="checkbox" name="center"  value="Greenville">Greenville<br />
-        <input type="checkbox" name="center"  value="Huntsville">Huntsville<br />
-        <input type="checkbox" name="center"  value="Jacksonville ">Jacksonville <br />
-        <input type="checkbox" name="center"  value="Knoxville">Knoxville<br />
-        <input type="checkbox" name="center"  value="Melbourne">Melbourne<br />
-        <input type="checkbox" name="center"  value="Memphis">Memphis<br />
-        <input type="checkbox" name="center"  value="Miami">Miami<br />
-        <input type="checkbox" name="center"  value="Montgomery">Montgomery<br />
-        <input type="checkbox" name="center"  value="Myrtle Beach">Myrtle Beach<br />
-        <input type="checkbox" name="center"  value="Nashville">Nashville<br />
-        <input type="checkbox" name="center"  value="Orangeburg">Orangeburg<br />
-        <input type="checkbox" name="center"  value="Orlando">Orlando<br />
-        <input type="checkbox" name="center"  value="Perry">Perry<br />
-        <input type="checkbox" name="center"  value="Raleigh">Raleigh<br />
-        <input type="checkbox" name="center"  value="Savannah">Savannah<br />
-        <input type="checkbox" name="center"  value="Tampa">Tampa<br />
+        <input type="checkbox" name="center" value="Bakersfield">Bakersfield<br />  
+        <input type="checkbox" name="center"  value="Fresno">Fresno<br />
+        <input type="checkbox" name="center"  value="Los Angeles">Los Angeles<br />
+        <input type="checkbox" name="center"  value="Phoenix">Phoenix<br />
+        <input type="checkbox" name="center"  value="Portland">Portland<br />
+        <input type="checkbox" name="center"  value="Sacramento">Sacramento<br />
+        <input type="checkbox" name="center"  value="San Diego">San Diego<br />
+        <input type="checkbox" name="center"  value="San Francisco">San Francisco<br />
+        <input type="checkbox" name="center"  value="San Jose">San Jose<br />
+        <input type="checkbox" name="center"  value="Seattle">Seattle<br />
+        <input type="checkbox" name="center"  value="Tuscon">Tuscon<br />
     </div>   
 
 
     <div class = "form-group hide" id = "Canadacenter">
         <label class = "titles">Pick Your Centers</label><br />  
         <input type="checkbox" onClick="toggle(this)" /> Select All<br/>
-        <input type="checkbox" name="center" value="Albany">Albany<br />  
-        <input type="checkbox" name="center"  value="Atlanta">Atlanta<br />
-        <input type="checkbox" name="center"  value="Augusta">Augusta<br />
-        <input type="checkbox" name="center"  value="Birmingham">Birmingham<br />
+        <input type="checkbox" name="center" value="Brandon">Brandon<br />  
+        <input type="checkbox" name="center"  value="Calgary">Calgary<br />
+        <input type="checkbox" name="center"  value="Edmonton">Edmonton<br />
+        <input type="checkbox" name="center"  value="Fort McMurry">Fort McMurry<br />
         <input type="checkbox" name="center"  value="Calhoun">Calhoun<br />
-        <input type="checkbox" name="center"  value="Columbia">Columbia<br />
-        <input type="checkbox" name="center"  value="Charlotte">Charlotte<br />
-        <input type="checkbox" name="center"  value="Chattanooga">Chattanooga<br />
-        <input type="checkbox" name="center"  value="Dothan/Ozark">Dothan/Ozark<br />
-        <input type="checkbox" name="center"  value="Gainesville ">Gainesville <br />
-        <input type="checkbox" name="center"  value="Greensboro">Greensboro<br />
-        <input type="checkbox" name="center"  value="Greenville">Greenville<br />
-        <input type="checkbox" name="center"  value="Huntsville">Huntsville<br />
-        <input type="checkbox" name="center"  value="Jacksonville ">Jacksonville <br />
-        <input type="checkbox" name="center"  value="Knoxville">Knoxville<br />
-        <input type="checkbox" name="center"  value="Melbourne">Melbourne<br />
-        <input type="checkbox" name="center"  value="Memphis">Memphis<br />
-        <input type="checkbox" name="center"  value="Miami">Miami<br />
-        <input type="checkbox" name="center"  value="Montgomery">Montgomery<br />
-        <input type="checkbox" name="center"  value="Myrtle Beach">Myrtle Beach<br />
-        <input type="checkbox" name="center"  value="Nashville">Nashville<br />
-        <input type="checkbox" name="center"  value="Orangeburg">Orangeburg<br />
-        <input type="checkbox" name="center"  value="Orlando">Orlando<br />
-        <input type="checkbox" name="center"  value="Perry">Perry<br />
-        <input type="checkbox" name="center"  value="Raleigh">Raleigh<br />
-        <input type="checkbox" name="center"  value="Savannah">Savannah<br />
-        <input type="checkbox" name="center"  value="Tampa">Tampa<br />
+        <input type="checkbox" name="center"  value="Saskatoon">Saskatoon<br />
+        <input type="checkbox" name="center"  value="Scarborough">Scarborough<br />
+        <input type="checkbox" name="center"  value="Thompson">Thompson<br />
+        <input type="checkbox" name="center"  value="Toronto">Toronto<br />
+        <input type="checkbox" name="center"  value="Winnipeg">Winnipeg<br />
     </div>
     <input type="submit" name="register" class="register register-submit" value="Register">
     <input type="button" name="home" class="home register-home" value="Home" >
@@ -261,10 +209,18 @@
 
 
 <script>
-    document.getElementById("registerForm").onload = function() {pickRegion()};
+    // document.getElementById("registerForm").onload = function() {pickRegion()};
 
     function pickRegion() {
+        var DB;
+
+        (function(global) {
+            DB =  global.localStorage.getItem("DB");
+        }(window));   
+
         console.log(DB);
+
+        
         if(DB == "SE_BST_2016") {
             var cent = document.getElementById("SEcenter");
             cent.classList.remove('hide');
