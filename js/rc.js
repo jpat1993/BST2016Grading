@@ -1,7 +1,7 @@
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 
 
-var DB = "SEEBSTDB";
+var DB;
 var id;
 var name;
 var getter;
@@ -11,6 +11,7 @@ function loadRc() {
     (function(global) {
         id =  global.localStorage.getItem("id");
         seva =  global.localStorage.getItem("seva");
+        DB = global.localStorage.getItem("DB");
     }(window));
 
     var tester = Parse.Object.extend(DB);
@@ -35,13 +36,22 @@ function loadRc() {
           console.log(details.get(lookup));
           console.log("#"+lookup);
 
-          getter = seva + lookup;
+          getter = lookup;
           $("#"+lookup).val(details.get(getter));
 
           // details.set(lookup, "poop");
           // details.save();
 
         };
+
+        // console.log(details.get('sm'));
+        // console.log(details.get('se'));
+        
+        var smInput = details.get('sm');
+        var seInput = details.get('se');
+
+        $('input:radio[name="sm"][value='+ smInput +']').attr('checked', true);
+        $('input:radio[name="se"][value='+ seInput +']').attr('checked', true);
 
       },
       error: function(object, error) {
@@ -74,31 +84,37 @@ $(".rcsubmit").click(function(){
   var value;
   var check;
   var check2;
-  var check3;
+
+
 
   query.get(id, {
       success: function(details) {
+          var count = 0; // for BAs
+
           for (var prop in values) {
+
                 var lookup = values[prop].name;
                 console.log(lookup);
                 console.log("#"+lookup);
 
-                  name = seva + lookup;
+                  name =  lookup;
                   value = values[prop].value;
 
                   details.set(name, value);
-                  if (lookup === "Sanchrecom" && value !== "0") {
-                    check = seva + "Sanchrecomcheck";
+
+                  if (lookup === "ba1" || lookup === "ba2" || lookup === "ba3" || lookup === "ba4") {
+                    count++;
+                  } else if (lookup === "sm" && value !== "0") {
+                    check = "sabhaMukhCheck";
                     details.set(check, true);
-                  } else if (lookup === "RCrecom" && value !== "0") {
-                    check = seva + "RCrecomcheck";
-                    details.set(check, true);
-                  } else if (lookup === "niyam" && value !== "0") {
-                    check2 = seva + "niyamcheck";
+                  } else if (lookup === "se" && value !== "0") {
+                    check2 = "satsangExamCheck";
                     details.set(check2, true);
-                  } else if (lookup === "balact" && value !== "0") {
-                    check3 = seva + "balactcheck";
-                    details.set(check3, true);
+                  }
+
+                  if(count === 4) {
+                    check = "balActCheck";
+                    details.set(check, true);
                   }
 
           };

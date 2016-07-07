@@ -10,6 +10,8 @@
     <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
 
     <link rel="stylesheet" href="../css/style.css">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
     
 
 
@@ -22,10 +24,105 @@
 
 <div class="essay-card">
     <form id ="rcform">
-        <h2 class="fs-title">RC Inputs: Recommendation, Niyam, and Bal Activity</h2>
-        <h5 class="fs-subtitle" id = "searchResults" >Please enter in a Recommendation between 1 and 5 for :  </h5>
+        <h2 class="fs-title">RC Inputs: Bal Activities, Sabha Mukhpath, Satsang Exams</h2>
+        <h5 class="fs-subtitle" id = "searchResults" >Please enter in Information for :  </h5>
+
 
         <div class="form-group" >
+            <label class = "titles">Bal Activities : </label> <br>
+
+            <label class = "titles-grade">Attendance Score: (Out of 5)</label>
+
+            <select class="input required" id = "ba1" name = "ba1">
+                <option disabled>Select an Option</option>
+                <option value="0">0</option>
+                <option value="1">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option> 
+                                       
+            </select>
+
+            <br>
+            
+            <label class = "titles-grade">Assignments Score: (Out of 5)</label>
+
+            <select class="input required" id = "ba2" name = "ba2">
+                <option disabled>Select an Option</option>
+                <option value="0">0</option>
+                <option value="1">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option> 
+                                       
+            </select>
+
+            <br>
+
+            <label class = "titles-grade">Participation Score: (Out of 5)</label>
+
+            <select class="input required" id = "ba3" name = "ba3">
+                <option disabled>Select an Option</option>
+                <option value="0">0</option>
+                <option value="1">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option> 
+                                       
+            </select>
+
+            <br>
+
+            <label class = "titles-grade">Leadership Score: (Out of 5)</label>
+
+            <select class="input required" id = "ba4" name = "ba4">
+                <option disabled>Select an Option</option>
+                <option value="0">0</option>
+                <option value="1">1</option> 
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option> 
+                                       
+            </select>
+
+            <br>
+            
+            
+        </div>
+
+
+        <div class="form-group" >
+            <label class = "titles">Sabha Mukhpath Score : </label> <br>
+            <div class="example" dir="ltr">Pick ONE of the 5 for his Sabha Mukhpath Score, for a max total of 25.</div>
+
+            <input type="radio" id="sm" name="sm" value="25" > 30 <br>
+            <input type="radio" id="sm" name="sm" value="20"> 28 - 29 <br>
+            <input type="radio" id="sm" name="sm" value="15"> 26 - 27 <br>
+            <input type="radio" id="sm" name="sm" value="10"> 24 - 25 <br>
+            <input type="radio" id="sm" name="sm" value="5"> Pass <br>     
+
+
+            
+        </div>
+
+        <div class="form-group" >
+            <label class = "titles">Satsang Exam Score : </label> <br>
+            <div class="example" dir="ltr">Determine the exams the balak was eligible to take over the past 2 years.  Add up the scores for each exam.  Divide by the total number of exams (up to 2) for a total score up to 30 points.</div>
+
+            <input type="radio" id="se" name="se" value="5"> Took the Exam/Fail <br>
+            <input type="radio" id="se" name="se" value="30"> Distinction <br>
+            <input type="radio" id="se" name="se" value="20"> 1st Class <br>
+            <input type="radio" id="se" name="se" value="10"> 2nd Class <br>
+            
+        </div>
+
+
+
+        <!-- <div class="form-group" >
             <label class = "titles">Enter in any Sanchalak comments below: </label>
             <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
             
@@ -73,7 +170,7 @@
         <div class="form-group" >
             <label class = "titles-grade">Bal Activity Score: (Out of 15)</label>
             <select id = "balact" name="balact" class="required"><option disabled>Select an Option</option><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option></select>
-        </div>
+        </div> -->
 
     <input type="button" name="rcsubmit" class="rcsubmit rcsubmit-submit" value="Submit Information" >
     <input type="button" id = "back" name="back" class="back" value="Back" >
@@ -84,10 +181,13 @@
     
 
 <!-- <div id="error"><img src="https://dl.dropboxusercontent.com/u/23299152/Delete-icon.png" /> Your caps-lock is on.</div> -->
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script> -->
 
+<script src="../js/jquery-1.9.1.min.js"></script>
+<script src="../js/jquery-ui.min.js"></script>
 
+<script src="../js/bootstrap.min.js"></script>
 <script type="text/javascript" src="../js/rc.js"></script>
     
     
