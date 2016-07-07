@@ -18,7 +18,7 @@ function loadBalaks(){
 
     var test = JSON.parse(centers);
 
-    console.log(test);
+    // console.log(test);
 
 
     var div = document.getElementById("searchResults");
