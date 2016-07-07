@@ -42,14 +42,14 @@ $(".login").click(function(e){
 
     // get values for next page
     var values = $(this).parent().serializeArray();
-    console.log(values);
+    // console.log(values);
 
     var email;
     var password;
     var name;
     for (var prop in values) {
-        console.log(values[prop].name);
-        console.log(values[prop].value);
+        // console.log(values[prop].name);
+        // console.log(values[prop].value);
 
         if (values[prop].name=== "user") {
             name = values[prop].value;
@@ -65,9 +65,9 @@ $(".login").click(function(e){
     Parse.User.logIn(name, password, {
       success: function(user) {
         // Do stuff after successful login.
-        console.log(user.get('centers'));
+        // console.log(user.get('centers'));
         centers = user.get('centers');
-        console.log(JSON.stringify(centers));
+        // console.log(JSON.stringify(centers));
         var seva = user.get('seva');
         
         (function(global) {
@@ -90,7 +90,7 @@ $(".login").click(function(e){
 
 
         // alert("centers: " + centers);
-        console.log(centers);
+        // console.log(centers);
 
       },
       error: function(user, error) {
