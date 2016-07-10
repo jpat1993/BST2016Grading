@@ -23,17 +23,16 @@
 
 <div class="essay-card">
     <form id ="recomform">
-        <h2 class="fs-title">P.Sant Recommendation Section</h2>
-        <h3 class="fs-subtitle" id = "searchResults" >Please enter in a Recommendation between 1 and 5 for :  </h3>
+        <h2 class="fs-title">P.Sant Input : Recommendation</h2>
+        <h3 class="fs-subtitle" id = "searchResults" >Please enter in the following information for : </h3>
 
-        <div class="form-group" >
-            <label class = "titles">Enter in any comments below: </label>
-            <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+        <div class="form-group2" >
+            <div class="example" dir="ltr">The ranking should be based on overall display in the following areas: seva, leadership, samp/teamwork, attitude, participation, and ahnik. Based off observation and experience, rate the balak from 1-5 (1 being worst, 5 being best). </div>
             
-            <textarea  id="recomcomment" name="recomcomment" rows="5"></textarea>
-            
-            <label class = "titles-grade">P.Sant Recommendation Score: (Out of 5)</label>
+
+            <label class = "titles-">P.Sant Recommendation Score: </label>
             <select class="input required" id = "recom" name = "recom">
+            
                 <option disabled>Select an Option</option>
                 <option value="0">0</option> 
                 <option value="5">1</option> 
@@ -43,6 +42,14 @@
                 <option value="25">5</option> 
                                        
             </select>
+            <br>
+
+            <label class = "titles">Enter in any comments below: </label>
+<!--             <div class="example" dir="ltr">Please answer in 3-5 sentences</div>
+ -->            
+            <textarea  id="recomcomment" name="recomcomment" rows="5"></textarea>
+            
+
         </div>
 
     <input type="button" name="recomsubmit" class="recomsubmit recomsubmit-submit" value="Submit Recommendation" >

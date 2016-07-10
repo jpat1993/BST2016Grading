@@ -25,10 +25,11 @@ function loadRc() {
 
     query.get(id, {
       success: function(details) {
-        name = details.get('firstname');
+        // name = details.get('firstname');
         console.log(name);
         var div = document.getElementById("searchResults");
-        var t = document.createTextNode(name);
+        var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('center') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        // var t = document.createTextNode(name);
         div.appendChild(t);
 
         for (var prop in values) {
@@ -48,10 +49,12 @@ function loadRc() {
         // console.log(details.get('se'));
         
         var smInput = details.get('sm');
-        var seInput = details.get('se');
+        var seInput1 = details.get('se1');
+        var seInput2 = details.get('se2');
 
         $('input:radio[name="sm"][value='+ smInput +']').attr('checked', true);
-        $('input:radio[name="se"][value='+ seInput +']').attr('checked', true);
+        $('input:radio[name="se1"][value='+ seInput1 +']').attr('checked', true);
+        $('input:radio[name="se2"][value='+ seInput2 +']').attr('checked', true);
 
       },
       error: function(object, error) {
@@ -107,7 +110,7 @@ $(".rcsubmit").click(function(){
                   } else if (lookup === "sm" && value !== "0") {
                     check = "sabhaMukhCheck";
                     details.set(check, true);
-                  } else if (lookup === "se" && value !== "0") {
+                  } else if ((lookup === "se1" && value !== "0") && (lookup === "se2" && value !== "0")) {
                     check2 = "satsangExamCheck";
                     details.set(check2, true);
                   }
