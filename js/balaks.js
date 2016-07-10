@@ -5,6 +5,11 @@ var DB;
 var centers;
 var seva;
 
+function changeCenter(){
+    window.location= "centers.html";
+
+
+}
 
 
 function loadBalaks(){
