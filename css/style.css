@@ -45,6 +45,8 @@ body {
   padding:10px 10px;
   text-decoration:none;
   text-shadow:0px 1px 0px #3d768a;
+  margin: inherit;
+  margin-left: 2vw;
 }
 .myButton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
@@ -67,9 +69,6 @@ body {
     position: absolute;
 }
 
-label.smallLabel {
-    font-size: smaller;
-}
 
 
 
@@ -222,7 +221,7 @@ fieldset[disabled] a.btn {
   border-radius: 2px;
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   overflow: hidden;
-  margin-top: 10vh;
+  margin-top: 2vh;
 }
 
 .balak-card h1 {
