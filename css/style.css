@@ -12,11 +12,12 @@ body {
 
 .titles{
     font-size: large;
-    color: #808080;
+    color: #6F84FF;
+    text-decoration: underline;
 }
 .titles-grade {
-    font-size: large;
-    color: red;
+    font-weight: normal;
+    text-indent: 50px;
 }
 
 
@@ -34,6 +35,7 @@ body {
     font-size: 13px;
     color: #666;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 input {
@@ -221,6 +223,14 @@ fieldset[disabled] a.btn {
   padding-right: 1vw;
 }
 
+.form-group2{
+  margin: auto;
+  /*display: inline-block;*/
+  /*padding-right: 1vw;*/
+  padding-bottom: 3vh
+}
+
+
 label {
   display: block;
 }
@@ -297,8 +307,17 @@ input[type="checkbox"] {
 
 
 input[type="radio"] {
-    width: 5vw;
+    width: 2vw;
 }
+
+input#se {
+    margin-left: 50px;
+}
+
+input#sm {
+    margin-left: 50px;
+}
+
 
 
 textarea#recomcomment{
@@ -366,7 +385,9 @@ textarea#recomcomment{
 
 h3#header {
     margin: auto;
-    color: firebrick;
+    color: gray;
+    font-weight: normal;
+    margin-bottom: 4vh;
 }
 
 

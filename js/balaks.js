@@ -22,11 +22,13 @@ function loadBalaks(){
 
 
     var div = document.getElementById("searchResults");
-    if (seva ==="RC") {
+    // if (seva ==="RC") {
         var header = document.getElementById("header");
-        var t = document.createTextNode("Click on the Name to Enter information about Balak.");
-        header.appendChild(t);
-    }
+        var elem = document.createElement("b");
+        elem.innerHTML = "Click on the white boxes to the left to enter grading information for the select balak.";
+        elem.style.fontSize = "20px"
+        header.appendChild(elem);
+    // }
 
     // for(var input in test) {
         var searcher = Parse.Object.extend(DB);
@@ -157,7 +159,42 @@ function layout(results) {
         block2.appendChild(check2);
 
 
-        //~~~~~~~~~~~~~~~~ Sabha Mukhpath END~~~~~~~~~~~~~~~~~~~~~
+        //~~~~~~~~~~~~~~~~ Sabha Mukhpath END~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+        //~~~~~~~~~~~~~~~~For Satsang Exam Total~~~~~~~~~~~~~~~~~~~~~
+
+        var block4 = document.createElement("div");
+        block4.setAttribute("class", "form-group");
+
+
+        var check4 = document.createElement('input');
+        check4.type = 'text';
+        check4.id = 'satsangExam';
+        check4.disabled = true;
+/*        check.setAttribute("onclick", "return false");
+*/
+        var checker4 = "satsangExamCheck";
+        if (object.get(checker4) === true) {
+            check4.value = (parseInt(object.get('se1'),10) +parseInt(object.get('se2'),10)) / 2 ;
+            check4.style.background = "#68e466";   
+        } else {
+            check4.style.background = "#ff8181";
+            check4.value = "N/A";
+        }
+
+        var newlabel4 = document.createElement("label");
+        newlabel4.setAttribute("for","sabhaMukh");
+        newlabel4.setAttribute("style","color:#6F84FF");
+        newlabel4.innerHTML = "Satsang Exam";
+
+
+        block4.appendChild(newlabel4);
+        block4.appendChild(check4);
+
+
+        //~~~~~~~~~~~~~~~~ Satsang Exam END~~~~~~~~~~~~~~~~~~~~~
+
 
 
 
@@ -178,7 +215,7 @@ function layout(results) {
         // check3.style.background = "#68e466";
 
         if (object.get('NAsum') !== undefined) {
-            check3.value = object.get('NAsum');
+            check3.value = object.get('NAsum')/75 * 100;
             check3.style.background = "#68e466";   
         } else {
             check3.style.background = "#ff8181";
@@ -199,39 +236,6 @@ function layout(results) {
 
 
 
-
-        //~~~~~~~~~~~~~~~~For Satsang Exam Total~~~~~~~~~~~~~~~~~~~~~
-
-        var block4 = document.createElement("div");
-        block4.setAttribute("class", "form-group");
-
-
-        var check4 = document.createElement('input');
-        check4.type = 'text';
-        check4.id = 'satsangExam';
-        check4.disabled = true;
-/*        check.setAttribute("onclick", "return false");
-*/
-        var checker4 = "satsangExamCheck";
-        if (object.get(checker4) === true) {
-            check4.value = object.get('se');
-            check4.style.background = "#68e466";   
-        } else {
-            check4.style.background = "#ff8181";
-            check4.value = "N/A";
-        }
-
-        var newlabel4 = document.createElement("label");
-        newlabel4.setAttribute("for","sabhaMukh");
-        newlabel4.setAttribute("style","color:#6F84FF");
-        newlabel4.innerHTML = "Satsang Exam";
-
-
-        block4.appendChild(newlabel4);
-        block4.appendChild(check4);
-
-
-        //~~~~~~~~~~~~~~~~ Satsang Exam END~~~~~~~~~~~~~~~~~~~~~
 
 
         //~~~~~~~~~~~~~~~~For Sant REc Total~~~~~~~~~~~~~~~~~~~~~
@@ -292,8 +296,8 @@ function layout(results) {
         
         var BA = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10) + parseInt(object.get('ba3'),10) + parseInt(object.get('ba4'),10);
         var SM = parseInt(object.get('sm'), 10);
-        var NA = parseInt(object.get('NAsum'), 10);
-        var SE = parseInt(object.get('se'), 10);
+        var NA = (parseInt(object.get('NAsum'), 10)) /75 * 100;
+        var SE = (parseInt(object.get('se1'), 10) + parseInt(object.get('se2'),10)) / 2 ;
         var Rec = parseInt(object.get('Santrecom'), 10);
 
         var score = (BA/20) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
@@ -378,8 +382,11 @@ function layout(results) {
         myDiv.appendChild(box);
         myDiv.appendChild(block);
         myDiv.appendChild(block2);
-        myDiv.appendChild(block3);
+        
         myDiv.appendChild(block4);
+
+        myDiv.appendChild(block3);
+
         myDiv.appendChild(block5);
         myDiv.appendChild(block6);
         // myDiv.appendChild(check);

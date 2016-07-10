@@ -25,13 +25,14 @@
 <div class="essay-card">
     <form id ="rcform">
         <h2 class="fs-title">RC Inputs: Bal Activities, Sabha Mukhpath, Satsang Exams</h2>
-        <h5 class="fs-subtitle" id = "searchResults" >Please enter in Information for :  </h5>
+        <h5 class="fs-subtitle" id = "searchResults" >Please enter in the following information for :  </h5>
 
 
-        <div class="form-group" >
+        <div class="form-group2" >
             <label class = "titles">Bal Activities : </label> <br>
+            <div class="example" dir="ltr">Based off observation and experience, rate the balak from 0-5 (0 being worst, 5 being best) on the following categories. Please reach out to the balak’s Sanchalak for further insight. </div>
 
-            <label class = "titles-grade">Attendance Score: (Out of 5)</label>
+            <label class = "titles-grade">Attendance Score: </label>
 
             <select class="input required" id = "ba1" name = "ba1">
                 <option disabled>Select an Option</option>
@@ -46,7 +47,7 @@
 
             <br>
             
-            <label class = "titles-grade">Assignments Score: (Out of 5)</label>
+            <label class = "titles-grade">Assignments Score: </label>
 
             <select class="input required" id = "ba2" name = "ba2">
                 <option disabled>Select an Option</option>
@@ -61,7 +62,7 @@
 
             <br>
 
-            <label class = "titles-grade">Participation Score: (Out of 5)</label>
+            <label class = "titles-grade">Participation Score: </label>
 
             <select class="input required" id = "ba3" name = "ba3">
                 <option disabled>Select an Option</option>
@@ -76,7 +77,7 @@
 
             <br>
 
-            <label class = "titles-grade">Leadership Score: (Out of 5)</label>
+            <label class = "titles-grade">Leadership Score: </label>
 
             <select class="input required" id = "ba4" name = "ba4">
                 <option disabled>Select an Option</option>
@@ -95,28 +96,39 @@
         </div>
 
 
-        <div class="form-group" >
+        <div class="form-group2" >
             <label class = "titles">Sabha Mukhpath Score : </label> <br>
-            <div class="example" dir="ltr">Pick ONE of the 5 for his Sabha Mukhpath Score, for a max total of 25.</div>
+            <div class="example" dir="ltr">Select one of the five options below that matches the balak's mukhpath exam score.</div>
 
             <input type="radio" id="sm" name="sm" value="25" > 30 <br>
             <input type="radio" id="sm" name="sm" value="20"> 28 - 29 <br>
             <input type="radio" id="sm" name="sm" value="15"> 26 - 27 <br>
             <input type="radio" id="sm" name="sm" value="10"> 24 - 25 <br>
-            <input type="radio" id="sm" name="sm" value="5"> Pass <br>     
+            <input type="radio" id="sm" name="sm" value="5"> 22 - 23 <br>     
 
 
             
         </div>
 
-        <div class="form-group" >
+        <div class="form-group2" >
             <label class = "titles">Satsang Exam Score : </label> <br>
-            <div class="example" dir="ltr">Determine the exams the balak was eligible to take over the past 2 years.  Add up the scores for each exam.  Divide by the total number of exams (up to 2) for a total score up to 30 points.</div>
+            <div class="example" dir="ltr">Determine the exams the balak was eligible to take over the past 2 years.</div>
+            
+            <label class = "titles-grade">Exam 1 Score/Result: </label> <br>
+            <input type="radio" id="se" name="se1" value="30"> Distinction <br>
+            <input type="radio" id="se" name="se1" value="20"> 1st Class <br>
+            <input type="radio" id="se" name="se1" value="10"> 2nd Class <br>
+            <input type="radio" id="se" name="se1" value="5"> Took the Exam/Fail <br>
+            <input type="radio" id="se" name="se1" value="0"> Absent <br>
 
-            <input type="radio" id="se" name="se" value="5"> Took the Exam/Fail <br>
-            <input type="radio" id="se" name="se" value="30"> Distinction <br>
-            <input type="radio" id="se" name="se" value="20"> 1st Class <br>
-            <input type="radio" id="se" name="se" value="10"> 2nd Class <br>
+            <label class = "titles-grade">Exam 2 Score/Result: </label> <br>
+            <input type="radio" id="se" name="se2" value="30"> Distinction <br>
+            <input type="radio" id="se" name="se2" value="20"> 1st Class <br>
+            <input type="radio" id="se" name="se2" value="10"> 2nd Class <br>
+            <input type="radio" id="se" name="se2" value="5"> Took the Exam/Fail <br>
+            <input type="radio" id="se" name="se2" value="0"> Absent <br>
+            
+            
             
         </div>
 

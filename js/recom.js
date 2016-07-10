@@ -28,7 +28,8 @@ function loadRecom() {
         name = details.get('firstname');
         console.log(name);
         var div = document.getElementById("searchResults");
-        var t = document.createTextNode(name);
+        var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('center') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        // var t = document.createTextNode(name);
         div.appendChild(t);
 
         for (var prop in values) {
@@ -67,11 +68,23 @@ $(".recomsubmit").click(function(){
       seva =  global.localStorage.getItem("seva");
   }(window));
 
+
+
   var tester = Parse.Object.extend(DB);
   var query = new Parse.Query(tester);
 
   var values = $("#recomform").serializeArray();
+
   console.log(values);
+
+  // check if recomment is filled out
+  if(values[1].value == "") {
+    alert("Please fill out the P.Sant Comment.");
+    return;
+  }
+
+
+
 
   console.log(id);
 
@@ -91,6 +104,7 @@ $(".recomsubmit").click(function(){
 
                 if(lookup === "recomcomment" || lookup === "recom") {
 
+                  console.log(prop);
                   name = seva + lookup;
                   value = values[prop].value;
                   details.set(name, value);
