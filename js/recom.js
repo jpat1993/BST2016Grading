@@ -78,10 +78,18 @@ $(".recomsubmit").click(function(){
   console.log(values);
 
   // check if recomment is filled out
+  if(values[0].value == "Select an Option") {
+    alert("Please fill out the P.Sant Recommendation Score.");
+    return;
+  }
+
+  // check if recomment is filled out
   if(values[1].value == "") {
     alert("Please fill out the P.Sant Comment.");
     return;
   }
+
+
 
 
 
