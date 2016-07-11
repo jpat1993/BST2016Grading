@@ -64,7 +64,7 @@ $(".register").click(function(e){
       error: function(user, error) {
         // Show the error message somewhere and let the user try again.
         handleParseError(error);
-        alert("Error: " + error.code + " " + error.message);
+        errorAlert("Error: " + error.code + " " + error.message);
       }
     });
 })

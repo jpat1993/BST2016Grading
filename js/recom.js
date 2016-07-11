@@ -47,7 +47,7 @@ function loadRecom() {
 
       },
       error: function(object, error) {
-          alert("Error: " + error.code + " " + error.message);
+          errorAlert("Error: " + error.code + " " + error.message);
       }
       
     });
@@ -79,13 +79,13 @@ $(".recomsubmit").click(function(){
 
   // check if recomment is filled out
   if(values[0].value == "Select an Option") {
-    alert("Please fill out the P.Sant Recommendation Score.");
+    errorAlert("Please fill out the P.Sant Recommendation Score.");
     return;
   }
 
   // check if recomment is filled out
   if(values[1].value == "") {
-    alert("Please fill out the P.Sant Comment.");
+    errorAlert("Please fill out the P.Sant Comment.");
     return;
   }
 
@@ -142,13 +142,13 @@ $(".recomsubmit").click(function(){
             error: function(details, error) {
               // Execute any logic that should take place if the save fails.
               // error is a Parse.Error with an error code and message.
-              alert('Failed to add Recommendation, with error code: ' + error.message);
+              errorAlert('Failed to add Recommendation, with error code: ' + error.message);
             }
           });          
 
       },
       error: function(object, error) {
-          alert("Error: " + error.code + " " + error.message);
+          errorAlert("Error: " + error.code + " " + error.message);
       }
 
   });

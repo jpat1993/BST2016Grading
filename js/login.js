@@ -97,7 +97,7 @@ $(".login").click(function(e){
         // The login failed. Check error to see why.
 
         handleParseError(error);
-        alert("Error: " + error.code + " " + error.message);
+        errorAlert("Error: " + error.code + " " + error.message);
       }
 
     });
@@ -132,7 +132,7 @@ $(".forgot").click(function(){
       },
       error: function(error) {
         // Show the error message somewhere
-        alert("Error: " + error.code + " " + error.message);
+        errorAlert("Error: " + error.code + " " + error.message);
       }
     });
 
