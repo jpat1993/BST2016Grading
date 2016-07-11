@@ -57,7 +57,7 @@ function loadBalaks(){
 
             },
             error: function(error) {
-                alert("Error: " + error.code + " " + error.message);
+                errorAlert("Error: " + error.code + " " + error.message);
             }
         });
 

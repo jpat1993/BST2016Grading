@@ -58,7 +58,7 @@ function loadRc() {
 
       },
       error: function(object, error) {
-          alert("Error: " + error.code + " " + error.message);
+          errorAlert("Error: " + error.code + " " + error.message);
       }
       
     });
@@ -132,13 +132,13 @@ $(".rcsubmit").click(function(){
             error: function(details, error) {
               // Execute any logic that should take place if the save fails.
               // error is a Parse.Error with an error code and message.
-              alert('Failed to add Recommendation, Niyam, and Bal Activity, with error code: ' + error.message);
+              errorAlert('Failed to add Recommendation, Niyam, and Bal Activity, with error code: ' + error.message);
             }
           });          
 
       },
       error: function(object, error) {
-          alert("Error: " + error.code + " " + error.message);
+          errorAlert("Error: " + error.code + " " + error.message);
       }
 
   });
