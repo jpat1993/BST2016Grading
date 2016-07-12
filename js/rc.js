@@ -121,12 +121,14 @@ $(".rcsubmit").click(function(){
                     details.set(check3, true);
                   }
 
-                  if(count === 2) {
-                    check4 = "balActCheck";
-                    details.set(check, true);
-                  }
+                  
 
           };
+
+          if(count === 2) {
+            check4 = "balActCheck";
+            details.set(check4, true);
+          }
           
           
           details.save(null, {
