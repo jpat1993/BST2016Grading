@@ -181,7 +181,7 @@ function layout(results) {
 */
         var checker4 = "satsangExamCheck";
         var se2check = "satsangExamCheck2"
-        if (object.get(checker4) === true && object.get(se2check)) {
+        if (object.get(checker4) === true && object.get(se2check) === true) {
 
             if(object.get('se2') === "x") {
 
