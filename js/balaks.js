@@ -30,7 +30,7 @@ function loadBalaks(){
     // if (seva ==="RC") {
         var header = document.getElementById("header");
         var elem = document.createElement("b");
-        elem.innerHTML = "Click on the white boxes to the left to enter grading information for the select balak.";
+        elem.innerHTML = "Click on the white boxes to the left to enter grading information for the selected balak.";
         elem.style.fontSize = "20px"
         header.appendChild(elem);
     // }
@@ -111,7 +111,7 @@ function layout(results) {
 */
         var checker = "balActCheck";
         if (object.get(checker) === true) {
-            var batotal = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10) + parseInt(object.get('ba3'),10) + parseInt(object.get('ba4'),10);
+            var batotal = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10);
             check.value = batotal;
             check.style.background = "#68e466";   
         } else {
@@ -122,7 +122,7 @@ function layout(results) {
         var newlabel = document.createElement("label");
         newlabel.setAttribute("for","balAct");
         newlabel.setAttribute("style","color:#6F84FF");
-        newlabel.innerHTML = "Bal Activities";
+        newlabel.innerHTML = "Bal Sabha";
 
 
         block.appendChild(newlabel);
@@ -181,7 +181,14 @@ function layout(results) {
 */
         var checker4 = "satsangExamCheck";
         if (object.get(checker4) === true) {
-            check4.value = (parseInt(object.get('se1'),10) +parseInt(object.get('se2'),10)) / 2 ;
+
+            if(object.get('se2') === "x") {
+
+                check4.value = parseInt(object.get('se1'),10);
+            } else {
+                check4.value = (parseInt(object.get('se1'),10) +parseInt(object.get('se2'),10)) / 2 ;
+            }
+
             check4.style.background = "#68e466";   
         } else {
             check4.style.background = "#ff8181";
@@ -220,7 +227,7 @@ function layout(results) {
         // check3.style.background = "#68e466";
 
         if (object.get('NAsum') !== undefined) {
-            check3.value = object.get('NAsum')/75 * 100;
+            check3.value = (object.get('NAsum')/75 * 100) + "%";
             check3.style.background = "#68e466";   
         } else {
             check3.style.background = "#ff8181";
@@ -299,13 +306,19 @@ function layout(results) {
         // }
 
         
-        var BA = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10) + parseInt(object.get('ba3'),10) + parseInt(object.get('ba4'),10);
+        var BA = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10);
         var SM = parseInt(object.get('sm'), 10);
         var NA = (parseInt(object.get('NAsum'), 10)) /75 * 100;
-        var SE = (parseInt(object.get('se1'), 10) + parseInt(object.get('se2'),10)) / 2 ;
+
+        if(object.get('se2') === "x") {
+            var SE = parseInt(object.get('se1'), 10);
+        } else {
+            var SE = (parseInt(object.get('se1'), 10) + parseInt(object.get('se2'),10)) / 2 ;
+        }
+        
         var Rec = parseInt(object.get('Santrecom'), 10);
 
-        var score = (BA/20) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
+        var score = (BA/10) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
 
         check6.value = score;
         check6.style.background = "#6578d6";   
