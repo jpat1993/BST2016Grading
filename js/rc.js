@@ -110,7 +110,7 @@ $(".rcsubmit").click(function(){
 
                   if (lookup === "ba1" || lookup === "ba2") {
                     count++;
-                  } else if (lookup === "sm" && value !== "0") {
+                  } else if (lookup === "sm") {
                     check = "sabhaMukhCheck";
                     details.set(check, true);
                   } else if (lookup === "se1") {
