@@ -180,7 +180,8 @@ function layout(results) {
 /*        check.setAttribute("onclick", "return false");
 */
         var checker4 = "satsangExamCheck";
-        if (object.get(checker4) === true) {
+        var se2check = "satsangExamCheck2"
+        if (object.get(checker4) === true && object.get(se2check)) {
 
             if(object.get('se2') === "x") {
 

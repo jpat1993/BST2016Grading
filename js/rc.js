@@ -87,6 +87,9 @@ $(".rcsubmit").click(function(){
   var value;
   var check;
   var check2;
+  var check3;
+  var check4;
+
 
 
 
@@ -105,18 +108,21 @@ $(".rcsubmit").click(function(){
 
                   details.set(name, value);
 
-                  if (lookup === "ba1" || lookup === "ba2" || lookup === "ba3" || lookup === "ba4") {
+                  if (lookup === "ba1" || lookup === "ba2") {
                     count++;
                   } else if (lookup === "sm" && value !== "0") {
                     check = "sabhaMukhCheck";
                     details.set(check, true);
-                  } else if ((lookup === "se1" && value !== "0") && (lookup === "se2" && value !== "0")) {
+                  } else if (lookup === "se1") {
                     check2 = "satsangExamCheck";
                     details.set(check2, true);
+                  } else if (lookup === "se2") {
+                    check3 = "satsangExamCheck2";
+                    details.set(check3, true);
                   }
 
-                  if(count === 4) {
-                    check = "balActCheck";
+                  if(count === 2) {
+                    check4 = "balActCheck";
                     details.set(check, true);
                   }
 
