@@ -108,7 +108,7 @@ $(".rcsubmit").click(function(){
 
                   details.set(name, value);
 
-                  if (lookup === "ba1" || lookup === "ba2") {
+                  if (lookup === "bs1" || lookup === "bs2") {
                     count++;
                   } else if (lookup === "sm") {
                     check = "sabhaMukhCheck";
@@ -126,7 +126,7 @@ $(".rcsubmit").click(function(){
           };
 
           if(count === 2) {
-            check4 = "balActCheck";
+            check4 = "balSabhaCheck";
             details.set(check4, true);
           }
           

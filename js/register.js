@@ -20,11 +20,13 @@ $(".register").click(function(e){
     var email;
     var seva;
     var name;
+
+    var region;
     for (var prop in values) {
         console.log(values[prop].name);
         console.log(values[prop].value);
 
-        if(values[prop].name=== "center") {
+        if(values[prop].name.indexOf("center") >= 0) {
             console.log(values[prop].value);
             centers.push(values[prop].value);
         } else if (values[prop].name=== "email") {
@@ -45,6 +47,11 @@ $(".register").click(function(e){
     e.preventDefault();
 
     
+    (function(global) {
+        region =  global.localStorage.getItem("region");
+    }(window));
+
+
 
     var user = new Parse.User();
     user.set("username", username);
@@ -52,6 +59,7 @@ $(".register").click(function(e){
     user.set("password", password);
     user.set("seva", seva);
     user.set("name", name);
+    user.set("region", region);
 
     // other fields can be set just like with Parse.Object
     user.set("centers", centers);

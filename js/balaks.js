@@ -41,7 +41,7 @@ function loadBalaks(){
 
         // query.startsWith("center", test[input]);
         query.containedIn("center", test);
-        event.preventDefault();
+        // event.preventDefault();
         query.find({
             success: function(results) {
 
@@ -105,14 +105,14 @@ function layout(results) {
 
         var check = document.createElement('input');
         check.type = 'text';
-        check.id = 'balAct';
+        check.id = 'balSabha';
         check.disabled = true;
 /*        check.setAttribute("onclick", "return false");
 */
-        var checker = "balActCheck";
+        var checker = "balSabhaCheck";
         if (object.get(checker) === true) {
-            var batotal = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10);
-            check.value = batotal;
+            var bstotal = parseInt(object.get('bs1'),10) + parseInt(object.get('bs2'),10);
+            check.value = bstotal;
             check.style.background = "#68e466";   
         } else {
             check.style.background = "#ff8181";
@@ -120,7 +120,7 @@ function layout(results) {
         }
 
         var newlabel = document.createElement("label");
-        newlabel.setAttribute("for","balAct");
+        newlabel.setAttribute("for","balSabha");
         newlabel.setAttribute("style","color:#6F84FF");
         newlabel.innerHTML = "Bal Sabha";
 

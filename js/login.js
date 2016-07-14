@@ -3,34 +3,36 @@
 
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 // Parse.User.enableRevocableSession();
-var DB;
+var DB = "BST2016";
 var centers;
+var region;
 
 function regionClick(id){
 
 
     if(id == "southeast") {
-        DB = "SE_BST_2016";
+        region = "SE_BST_2016";
     } else if (id == "northeast") {
-        DB = "NE_BST_2016";
+        region = "NE_BST_2016";
     } else if (id == "midwest") {
-        DB = "MW_BST_2016";
+        region = "MW_BST_2016";
     } else if (id == "southwest") {
-        DB = "SW_BST_2016";
+        region = "SW_BST_2016";
     } else if (id == "west") {
-        DB = "West_BST_2016";
+        region = "West_BST_2016";
     } else if (id == "canada") {
-        DB = "Canada_BST_2016";
+        region = "Canada_BST_2016";
     }
   
     var cent = document.getElementById("loginform");
     cent.classList.remove('hide');
 
-    var region = document.getElementById("region");
-    region.classList.add('hide');;
+    var regionShow = document.getElementById("region");
+    regionShow.classList.add('hide');;
 
     (function(global) {
       global.localStorage.setItem("DB", DB);
+      global.localStorage.setItem("region", region);
     }(window));
 
 };
@@ -103,7 +105,7 @@ $(".login").click(function(e){
     });
     
 
-      event.preventDefault();
+      e.preventDefault();
 
 })
 
@@ -119,7 +121,7 @@ function handleParseError(err) {
 
 
 
-$(".forgot").click(function(){
+$(".forgot").click(function(event){
 
     var email = prompt("Please enter your email!");
 

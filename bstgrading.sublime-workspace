@@ -4,6 +4,26 @@
 		"selected_items":
 		[
 			[
+				"ser",
+				"searcher"
+			],
+			[
+				"pare",
+				"parseInt"
+			],
+			[
+				"Rec",
+				"Recommendation"
+			],
+			[
+				"new",
+				"newlabel"
+			],
+			[
+				"form",
+				"form-group"
+			],
+			[
 				"niya",
 				"niyamfs1"
 			],
@@ -476,10 +496,6 @@
 				"splitupBlock"
 			],
 			[
-				"new",
-				"newBlocks"
-			],
-			[
 				"sp",
 				"split"
 			],
@@ -498,22 +514,6 @@
 			[
 				"SR",
 				"SBRK_SIZE"
-			],
-			[
-				"num",
-				"num_bytes"
-			],
-			[
-				"merg",
-				"mergeBlock"
-			],
-			[
-				"buddy",
-				"buddyBit"
-			],
-			[
-				"meta",
-				"metadata_t"
 			]
 		]
 	},
@@ -523,15 +523,15 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2848,
-				"line_ending": "Unix"
+				"buffer_size": 3074,
+				"line_ending": "Windows"
 			}
 		},
 		{
 			"file": "js/login.js",
 			"settings":
 			{
-				"buffer_size": 2613,
+				"buffer_size": 3407,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,39 +539,7 @@
 			"file": "pages/register.html",
 			"settings":
 			{
-				"buffer_size": 4672,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/recom.html",
-			"settings":
-			{
-				"buffer_size": 2205,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/rc.html",
-			"settings":
-			{
-				"buffer_size": 7133,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/essay.html",
-			"settings":
-			{
-				"buffer_size": 4937,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "pages/balaks.html",
-			"settings":
-			{
-				"buffer_size": 1134,
+				"buffer_size": 14154,
 				"line_ending": "Windows"
 			}
 		},
@@ -579,7 +547,79 @@
 			"file": "js/register.js",
 			"settings":
 			{
-				"buffer_size": 2052,
+				"buffer_size": 2060,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/balaks.html",
+			"settings":
+			{
+				"buffer_size": 2007,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/balaks.js",
+			"settings":
+			{
+				"buffer_size": 16975,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 13731,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/rc.html",
+			"settings":
+			{
+				"buffer_size": 12341,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/rc.js",
+			"settings":
+			{
+				"buffer_size": 4278,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/recom.html",
+			"settings":
+			{
+				"buffer_size": 3020,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/recom.js",
+			"settings":
+			{
+				"buffer_size": 3897,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/centers.html",
+			"settings":
+			{
+				"buffer_size": 14078,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/centers.js",
+			"settings":
+			{
+				"buffer_size": 2682,
 				"line_ending": "Windows"
 			}
 		}
@@ -625,6 +665,14 @@
 	"file_history":
 	[
 		"/C/xampp/htdocs/BST2016Grading/js/parse-1.6.14.min.js",
+		"/C/Users/Jay Patel/Source/Repos/houbalmandal2/houbalmandal/Scripts/angular-ui-router/release/angular-ui-router.min.js",
+		"/C/Users/Jay Patel/Source/Repos/houbalmandal2/houbalmandal/Scripts/angular-ui-router/release/angular-ui-router.js",
+		"/C/xampp/htdocs/BST2016Grading/css/style.css",
+		"/C/xampp/htdocs/BST2016Grading/js/recom.js",
+		"/C/xampp/htdocs/BST2016Grading/pages/rc.html",
+		"/C/xampp/htdocs/BST2016Grading/pages/balaks.html",
+		"/C/xampp/htdocs/BST2016Grading/pages/essay.html",
+		"/C/xampp/htdocs/BST2016Grading/pages/recom.html",
 		"/C/xampp/htdocs/BST2016Grading/js/rc.js",
 		"/C/xampp/htdocs/BST2016Grading/bstgrading",
 		"/C/xampp/htdocs/BST2016Grading/index.html",
@@ -743,23 +791,15 @@
 		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/winedata.arff",
 		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/car/cardata.arff",
 		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/subArray.java",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/README",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/README_Experiment_Gui",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/documentation.css",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/supervised_learning-master/supervised_learning-master/decision_tree.py",
-		"/C/Users/Jay Patel/Desktop/VIP/sql.py",
-		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/hello.js",
-		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/index.html",
-		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/HelloClass.java",
-		"/C/Users/Jay Patel/Desktop/Courses/Developing Scalable Apps with Java/Materials/Exercise and Example Code/ud859-master/Lesson_2/001_Hello_Endpoints_Solutions/HelloWorldEndpoints.java"
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/book2ndEd-branch/README"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 			"C:\\xampp\\htdocs\\lockeroom\\system\\database"
@@ -770,6 +810,37 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Washington",
+			"Columbia",
+			"Montgomery",
+			"NE_BST_2016",
+			"DB",
+			"alert",
+			"css",
+			"toggle",
+			"db",
+			"radio",
+			"input",
+			"seva",
+			"score",
+			"seva",
+			"lookup",
+			"seva",
+			"getter",
+			"submit",
+			"rcLayout",
+			".form-group",
+			"input",
+			"essay",
+			"10vh",
+			"rc",
+			"balak-card",
+			"balak-header",
+			"localstorage",
+			"centers",
+			"localStorage",
+			"center\n",
+			"checkboxes",
 			"Montserrat",
 			"gotostart",
 			"Canada_BST_2016",
@@ -866,38 +937,7 @@
 			"background",
 			"start",
 			"source",
-			"trigger",
-			";\n",
-			"searchresults",
-			"if val406 != 0:",
-			"example",
-			"})",
-			"name",
-			"form-group",
-			"button",
-			"buttons",
-			"/option",
-			"option",
-			"logmsk",
-			"<<<<<<< HEAD",
-			"addClass",
-			"next",
-			"prog",
-			"selected",
-			"disabled",
-			"values",
-			"first",
-			"next_fs",
-			"Confirmation",
-			"DB",
-			"msform",
-			"current_fs",
-			"getStep",
-			"        <script src=\"js/jquery.steps.js\"></script>",
-			"getSTep",
-			"insert",
-			"insert	",
-			"insert"
+			"trigger"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -931,7 +971,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -939,77 +979,21 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 2848,
+						"buffer_size": 3074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2521,
-								2521
+								2502,
+								2456
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 462.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "js/login.js",
-					"settings":
-					{
-						"buffer_size": 2613,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								156,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 126.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "pages/register.html",
-					"settings":
-					{
-						"buffer_size": 4672,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								631,
-								631
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
@@ -1019,24 +1003,80 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "pages/recom.html",
+					"buffer": 1,
+					"file": "js/login.js",
 					"settings":
 					{
-						"buffer_size": 2205,
+						"buffer_size": 3407,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								198,
-								198
+								922,
+								922
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 42.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pages/register.html",
+					"settings":
+					{
+						"buffer_size": 14154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3014,
+								3014
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 704.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "js/register.js",
+					"settings":
+					{
+						"buffer_size": 2060,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1048,74 +1088,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "pages/rc.html",
-					"settings":
-					{
-						"buffer_size": 7133,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								195,
-								195
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "pages/essay.html",
-					"settings":
-					{
-						"buffer_size": 4937,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								199,
-								199
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
 					"file": "pages/balaks.html",
 					"settings":
 					{
-						"buffer_size": 1134,
+						"buffer_size": 2007,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								90,
-								90
+								295,
+								295
 							]
 						],
 						"settings":
@@ -1131,19 +1115,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "js/register.js",
+					"buffer": 5,
+					"file": "js/balaks.js",
 					"settings":
 					{
-						"buffer_size": 2052,
+						"buffer_size": 16975,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								3265,
+								3265
 							]
 						],
 						"settings":
@@ -1153,7 +1137,207 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 1143.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 13731,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1528,
+								1528
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 78.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "pages/rc.html",
+					"settings":
+					{
+						"buffer_size": 12341,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1875,
+								1875
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 850.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "js/rc.js",
+					"settings":
+					{
+						"buffer_size": 4278,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3374,
+								3374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1429.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "pages/recom.html",
+					"settings":
+					{
+						"buffer_size": 3020,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "js/recom.js",
+					"settings":
+					{
+						"buffer_size": 3897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1369,
+								1374
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 354.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "pages/centers.html",
+					"settings":
+					{
+						"buffer_size": 14078,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "js/centers.js",
+					"settings":
+					{
+						"buffer_size": 2682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2316,
+								2316
+							],
+							[
+								2328,
+								2333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 924.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
