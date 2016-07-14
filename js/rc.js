@@ -1,7 +1,7 @@
 Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
 
 
-var DB;
+var DB = "BST2016";
 var id;
 var name;
 var getter;
@@ -11,7 +11,6 @@ function loadRc() {
     (function(global) {
         id =  global.localStorage.getItem("id");
         seva =  global.localStorage.getItem("seva");
-        DB = global.localStorage.getItem("DB");
     }(window));
 
     var tester = Parse.Object.extend(DB);
