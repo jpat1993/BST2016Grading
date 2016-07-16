@@ -26,10 +26,15 @@ $(".register").click(function(e){
         console.log(values[prop].name);
         console.log(values[prop].value);
 
-        if(values[prop].name=== "center") {
+        if(values[prop].name.indexOf("center") >= 0) {
             console.log(values[prop].value);
             centers.push(values[prop].value);
-        } ;
+        };
+
+        // if(values[prop].name=== "center") {
+        //     console.log(values[prop].value);
+        //     centers.push(values[prop].value);
+        // } ;
 
         // else if (values[prop].name=== "email") {
         //     username = values[prop].value;
