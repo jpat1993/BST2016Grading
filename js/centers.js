@@ -1,8 +1,10 @@
 
 
 
-Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
-// var DB = "SEEBSTDB";
+Parse.initialize("0Fb9B6wZHGmpjRTJUoRvyFSGQl2lTOhbYNnvazTv", "gHDjSNQtKWNaFlquz6QCvBWiIJHVQ3CqEezuS22r");
+Parse.serverURL = 'https://parseapi.back4app.com';
+
+var DB = "SEEBSTDB";
 
 
 

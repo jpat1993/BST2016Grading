@@ -1,9 +1,14 @@
-Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
+
+
+Parse.initialize("0Fb9B6wZHGmpjRTJUoRvyFSGQl2lTOhbYNnvazTv", "gHDjSNQtKWNaFlquz6QCvBWiIJHVQ3CqEezuS22r");
+Parse.serverURL = 'https://parseapi.back4app.com';
+
 
 
 var DB = "BST2016";
 var centers;
 var seva;
+var region;
 
 function changeCenter(){
     window.location= "centers.html";
@@ -17,7 +22,7 @@ function loadBalaks(){
     (function(global) {
         centers =  global.localStorage.getItem("centers");
         seva =  global.localStorage.getItem("seva");
-
+        region = global.localStorage.getItem("region");
     }(window));
 
     var test = JSON.parse(centers);
@@ -39,7 +44,25 @@ function loadBalaks(){
         var query = new Parse.Query(searcher);
 
         // query.startsWith("center", test[input]);
-        query.containedIn("center", test);
+
+        if(region == "SE_BST_2016") {
+            query.containedIn("SEcenter", test);
+        } else if (region == "NE_BST_2016") {
+            query.containedIn("NEcenter", test);
+        } else if (region == "MW_BST_2016") {
+            query.containedIn("MWcenter", test);
+        } else if (region == "SW_BST_2016") {
+            query.containedIn("SWcenter", test);
+        } else if (region == "West_BST_2016") {
+            query.containedIn("Wcenter", test);
+        } else if (region == "Canada_BST_2016") {
+            query.containedIn("Canadacenter", test);
+        } else {
+            query.containedIn("NEcenter", test);
+        }
+
+
+        // query.containedIn("center", test);
         // event.preventDefault();
         query.find({
             success: function(results) {
@@ -70,6 +93,8 @@ function loadBalaks(){
 
 
 function layout(results) {
+
+
     var div = document.getElementById("searchResults");
     // console.log(seva);
 
@@ -79,7 +104,25 @@ function layout(results) {
 
         var myDiv = document.createElement("div");
         myDiv.setAttribute("class", 'test');
-        var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('center') + ' - ' + "\n Name : " + object.get('firstname') + ' ' + object.get('lastname'));
+
+        if(region == "SE_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('SEcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else if (region == "NE_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('NEcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else if (region == "MW_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('MWcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else if (region == "SW_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('SWcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else if (region == "West_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('Wcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else if (region == "Canada_BST_2016") {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('Canadacenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        } else {
+            var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('NEcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
+        }
+
+
+        // var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('center') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));
 
         var box = document.createElement("button");
 
@@ -264,7 +307,7 @@ function layout(results) {
 */
         var checker5 = "santRecCheck";
         if (object.get(checker5) === true) {
-            check5.value = object.get('Santrecom');
+            check5.value = object.get('recom');
             check5.style.background = "#68e466";   
         } else {
             check5.style.background = "#ff8181";
@@ -306,7 +349,7 @@ function layout(results) {
         // }
 
         
-        var BA = parseInt(object.get('ba1'),10) + parseInt(object.get('ba2'),10);
+        var BA = parseInt(object.get('bs1'),10) + parseInt(object.get('bs2'),10);
         var SM = parseInt(object.get('sm'), 10);
         var NA = (parseInt(object.get('NAsum'), 10)) /75 * 100;
 
@@ -316,7 +359,7 @@ function layout(results) {
             var SE = (parseInt(object.get('se1'), 10) + parseInt(object.get('se2'),10)) / 2 ;
         }
         
-        var Rec = parseInt(object.get('Santrecom'), 10);
+        var Rec = parseInt(object.get('recom'), 10);
 
         var score = (BA/10) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
 

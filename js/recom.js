@@ -1,16 +1,20 @@
-Parse.initialize("1dlfQyT8N0OrUJXzRWk9gtWz3fXHYNgKnZNOhWyY", "OTs8JFyPYJ3yrm03qc1jgY9NGCFJBXqsxsNCKT8E");
+Parse.initialize("0Fb9B6wZHGmpjRTJUoRvyFSGQl2lTOhbYNnvazTv", "gHDjSNQtKWNaFlquz6QCvBWiIJHVQ3CqEezuS22r");
+Parse.serverURL = 'https://parseapi.back4app.com';
+
 
 
 var DB = "BST2016";
 var id;
 var name;
 var getter;
+var region;
 
 function loadRecom() {
 
     (function(global) {
         id =  global.localStorage.getItem("id");
         seva =  global.localStorage.getItem("seva");
+        region = global.localStorage.getItem("region");
     }(window));
 
     var tester = Parse.Object.extend(DB);
@@ -27,7 +31,25 @@ function loadRecom() {
         name = details.get('firstname');
         console.log(name);
         var div = document.getElementById("searchResults");
-        var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('center') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+
+        if(region == "SE_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('SEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else if (region == "NE_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('NEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else if (region == "MW_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('MWcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else if (region == "SW_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('SWcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else if (region == "West_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('Wcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else if (region == "Canada_BST_2016") {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('Canadacenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        } else {
+            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('NEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
+        }
+
+
+        // var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('center') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));
         // var t = document.createTextNode(name);
         div.appendChild(t);
 
@@ -112,7 +134,7 @@ $(".recomsubmit").click(function(){
                 if(lookup === "recomcomment" || lookup === "recom") {
 
                   console.log(prop);
-                  name = seva + lookup;
+                  name = lookup;
                   value = values[prop].value;
                   details.set(name, value);
                   count++;
