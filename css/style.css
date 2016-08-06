@@ -1,7 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Roboto:400,100);
 
 body {
-  background: url(//dl.dropboxusercontent.com/u/23299152/Wallpapers/wallpaper-22705.jpg) no-repeat center center fixed; 
+  background: url(../img/background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -689,7 +689,7 @@ textarea#RCrecomcomment {
 
 .portfolio-card {
   padding: 40px;
-  width: 50vw;
+  width: 90vw;
   background-color: #F7F7F7;
   margin: 0 auto 10px;
   border-radius: 2px;
@@ -770,4 +770,53 @@ input[type="checkbox"] {
   font-family: inherit;
   color: #2C3E50;
   font-size: 13px;
+}
+
+.colLeft {
+    float: left;
+    width: 33%;
+    border-style: groove;
+}
+
+.colRight {
+    float: left;
+    width:33%;
+    border-style:groove;
+}
+
+.picCol {
+  float: right;
+  /*border-style:groove;*/
+}
+
+.emailRow {
+  float: left;
+  width: 75%;
+  border-style:groove;
+}
+
+.compl {
+  float: right;
+  border-style:groove;
+}
+
+.oneOn {
+  width:100%;
+}
+
+#topPort{
+  width:100%;
+  border-top-style: solid;
+  border-bottom-style: solid;
+}
+
+label.titles {
+  display:block;
+}
+
+.satsang-port {
+    display: table;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 400;
 }

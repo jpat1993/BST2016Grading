@@ -15,9 +15,13 @@ var myInput = document.getElementById('myPic');
 function sendPic() {
     var file = myInput.files[0];
 
-    var picSpot = document.getElementById("profPic");
-    picSpot.src =file ;
-    picSpot.remove('hide');
+    // var picSpot = document.getElementById("profPic");
+    
+
+    file = window.URL.createObjectURL(file);
+    $('#profPic').attr('src' , file);
+
+    $('#myPic').hide();
     // Send file here either by adding it to a `FormData` object 
     // and sending that via XHR, or by simply passing the file into 
     // the `send` method of an XHR instance.

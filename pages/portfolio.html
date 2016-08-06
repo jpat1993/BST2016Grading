@@ -24,48 +24,113 @@
 
 <div class="portfolio-card">
     <form id ="portfolio">
-        <h2 class="fs-title" id= "portTitle">Portfolio : </h2>
+        <h2 class="fs-title" id= "portTitle">BST Balak Portfolio</h2>
 <!--         <h3 class="fs-subtitle" id = "searchResults" >Please enter in the following information for : </h3>
  -->
-            <label class = "titles-port" id="att">Attendance Score: </label>
-            <label class = "titles-port" id="bev">Behavior Score: </label>
-            <label class = "titles-port" id="sm">Sabha Mukhpath Score: </label>
-            <label class = "titles-port" id="se1">Satsang Exam 1 (2015) Score: </label>
-            <label class = "titles-port" id="se2">Satsang Exam 2 (2016) Score: </label>
-                
-            <input id="myPic" type= "file" accept="image/*;capture=camera">
+            <div class = "topRow">
+                <div class = "colLeft">
+                    <label class = "titles-port" id="bkid">BK ID: </label>
+                    <label class = "titles-port" id="region">Region: </label>
+                    <label class = "titles-port" id="center">Center: </label>
+                    <label class = "titles-port" id="grade">Grade: </label>
+                </div>
 
-            <img id="profPic" class="img-responsive" alt="Cinque Terre" width="304" height="236">
+                <div class = "colRight">
+                    <label class = "titles-port" id="first">First Name: </label>
+                    <label class = "titles-port" id="middle">Middle Name: </label>
+                    <label class = "titles-port" id="last">Last Name: </label>
+                    <label class = "titles-port" id="dob">Date of Birth: </label>
+                </div>
 
-                
-            <label class = "titles">One-on-one Information: </label>
+                <div class ="picCol">
+                    <input id="myPic" type= "file" accept="image/*;capture=camera">
+                    <img id="profPic" class="img-responsive" width="304" height="236">
 
-            <div class="example" dir="ltr">Please enter in Satsang Information about BST Balak.</div>
-            <textarea  id="satsang" name="satsang" class = "bigarea" rows="5"></textarea>
-
-            <div class="example" dir="ltr">Please enter in Academic Information about BST Balak.</div>
-            <textarea  id="acad" name="acad" class = "bigarea" rows="5"></textarea>
-
-            <div class="example" dir="ltr">Please enter in Personal Talent Information about BST Balak.</div>
-            <textarea  id="tal" name="tal" class = "bigarea" rows="5"></textarea>
-            
-
-            <div class="form-group">
-              <label for="sel1">Talents: </label>
-              <select class="form-control" id="talents">
-                <option value ="Singing">Singing</option>
-                <option value ="Dancing">Dancing</option>
-                <option value ="Instruments">Instruments</option>
-                <option value ="Software">Software</option>
-                <option value ="Photography">Photography</option>
-                <option value ="Other">Other</option>
-              </select>
+                </div>
             </div>
 
+            <div class = "emailRow">
+                <label class = "titles-port" id="email">Email: </label>
+                <label class = "titles-port" id="addr">Address: </label>
+   
+            </div>
 
-            <div class="example" dir="ltr">Action Item to discuss in Next One-on-One Session.</div>
-            <textarea  id="nextO" name="nextO" class = "bigarea" rows="5"></textarea>
+            <div class = "compl">
+                <label class = "titles-port" id="compl"># of Completed Terms of BST: </label> 
+            </div>
 
+            <div class="form-group" id="topPort">
+                <div class="col-xs-6">
+                    <label class = "titles">Topic: </label>
+                    <div class="example" dir="ltr"><strong>Education:</strong></div>
+                    <textarea  id="edu" name="edu" class = "bigarea" rows="5" placeholder="List education acheivements, current academic standing GPA, clubs, etc."></textarea>
+
+                    <div class="example" dir="ltr"><strong>Satsang:</strong></div>
+                    <label class = "satsang-port" id="se1">Satsang Exam Score 1: </label>
+                    <label class = "satsang -port" id="se2">Satsang Exam Score 2: </label>
+                    <label class = "satsang -port" id="na">Niyam Assessment: </label>
+                    <label class = "satsang -port" id="bs">BST Score: </label>
+                    <textarea  id="satsang" name="satsang" class = "bigarea" rows="5" placeholder="List satsang achievements (muhkpath) and level of depth i.e. Knows entire Chesta, etc."></textarea>
+    
+
+                    <div class="example" dir="ltr"><strong>Skills:</strong></div>
+                    <textarea  id="skills" name="skills" class = "bigarea" rows="5" placeholder="List any skills/talents i.e. Tabla, Solo Singing, Art."></textarea>   
+
+
+                </div>
+
+                <div class="col-xs-6">
+                    <label class = "titles">Action Item: </label>
+                    <div class="example" dir="ltr"><strong>Education:</strong></div>
+                    <textarea  id="eduAction" name="eduAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.
+i.e.  
+01/02: Connect balak with a kishore who is good in Algebra
+02/03: Have PC talk to parents about the importance of participating in extra-curricular activities"></textarea>
+
+                    <div class="example" dir="ltr"><strong>Satsang:</strong></div>
+                    <textarea  id="satsangAction" name="satsangAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea>
+
+                    <div class="example" dir="ltr"><strong>Skills:</strong></div>
+                    <textarea  id="skillsAction" name="skillsAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea>   
+
+
+                </div>
+            </div>
+
+            <div class="form-group oneOn">
+                <label class = "titles">One-on-one Information: </label>
+                <div class="col-xs-6">
+
+                    <div class="example" dir="ltr"><strong>Date:</strong> </div>
+                    <textarea  id="satsang" name="satsang" class = "bigarea" rows="5"></textarea>
+
+                    <textarea  id="acad" name="acad" class = "bigarea" rows="5"></textarea>
+
+                    <textarea  id="tal" name="tal" class = "bigarea" rows="5"></textarea>
+                </div>
+
+                <div class="col-xs-6">
+                    <div class="example" dir="ltr"><strong>Follow-Up Action Item:</strong> </div>
+                    <textarea  id="satsang" name="satsang" class = "bigarea" rows="5"  placeholder ="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea>
+
+                    <textarea  id="acad" name="acad" class = "bigarea" rows="5"></textarea>
+
+                    <textarea  id="tal" name="tal" class = "bigarea" rows="5"></textarea>
+                </div>
+
+<!--                 <div class="form-group">
+                  <label for="sel1">Talents: </label>
+                  <select class="form-control" id="talents">
+                    <option value ="Singing">Singing</option>
+                    <option value ="Dancing">Dancing</option>
+                    <option value ="Instruments">Instruments</option>
+                    <option value ="Software">Software</option>
+                    <option value ="Photography">Photography</option>
+                    <option value ="Other">Other</option>
+                  </select>
+                </div> -->
+
+            </div>
 
 
         
