@@ -13,9 +13,96 @@ var region;
 function changeCenter(){
     window.location= "centers.html";
 
+}
+
+function updateDB(){
+
+    var searcher = Parse.Object.extend(DB);
+    var query = new Parse.Query(searcher);
+
+    query.equalTo("FINALSUBMIT", true);
+    query.limit(1000);
+
+    query.find({
+        success: function(results) {
+            // console.log(results);
+            updateResults(results);
+
+        },
+        error: function(error) {
+            errorAlert("Error: " + error.code + " " + error.message);
+        }
+    });
 
 }
 
+
+function updateResults(results) {
+
+    var tester = Parse.Object.extend(DB);
+    var query = new Parse.Query(tester);
+
+    for (var i = 0; i < results.length; i++) {
+        var object = results[i];
+
+        query.get(object.id, {
+          success: function(details) {
+              // SAVE Final values in DB - PArse
+
+              var BA = parseInt(details.get('bs1'),10) + parseInt(details.get('bs2'),10);
+              var SM = parseInt(details.get('sm'), 10);
+              var NA = (parseInt(details.get('NAsum'), 10)) /75 * 100;
+
+              if(details.get('se2') === "x") {
+                  var SE = parseInt(details.get('se1'), 10);
+              } else {
+                  var SE = (parseInt(details.get('se1'), 10) + parseInt(details.get('se2'),10)) / 2 ;
+              }
+              
+              var Rec = parseInt(details.get('recom'), 10);
+
+              var score = (BA/10) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
+
+              var BalSabha = "BalSabha";
+              var SabhaMukpath = "SabhaMukpath";
+              var SatsangExam = "SatsangExam";
+              var NiyamAssess = "NiyamAssess";
+              var SantRec = "SantRec";
+              var TotalScore = "TotalScore";
+
+              details.set(BalSabha,BA);
+              details.set(SabhaMukpath,SM);
+              details.set(SatsangExam,SE);
+              details.set(NiyamAssess,NA);
+              details.set(SantRec,Rec);
+              details.set(TotalScore, score);
+              
+              details.save(null, {
+                success: function(details) {
+                  console.log("success" + name);
+                  // alert("Your Recommendation has been submitted.");
+                  window.location= "balaks.html";
+                },
+                error: function(details, error) {
+                  // Execute any logic that should take place if the save fails.
+                  // error is a Parse.Error with an error code and message.
+                  errorAlert('Failed to add Final Score to Database - Update DB' + error.message);
+                }
+              });          
+
+          },
+          error: function(object, error) {
+              errorAlert("Error: " + error.code + " " + error.message);
+          }
+
+      });
+
+
+    }
+
+    successAlert('Database has been Updated!');
+
+}
 
 function loadBalaks(){
 
@@ -349,6 +436,7 @@ function layout(results) {
         // }
 
         
+
         var BA = parseInt(object.get('bs1'),10) + parseInt(object.get('bs2'),10);
         var SM = parseInt(object.get('sm'), 10);
         var NA = (parseInt(object.get('NAsum'), 10)) /75 * 100;
@@ -460,6 +548,44 @@ function layout(results) {
 
 
         div.appendChild(myDiv);
+
+      //   // ADD DATA TO DB
+      //   var tester = Parse.Object.extend(DB);
+      //   var query = new Parse.Query(tester);
+
+      //   var BalSabha,SabhaMukpath,SatsangExam, NiyamAssess, SantRec, TotalScore;
+
+      //   query.get(object.id, {
+      //     success: function(details) {
+                           
+      //         details.set(BalSabha,BA);
+      //         details.set(SabhaMukpath,SM);
+      //         details.set(SatsangExam,SE);
+      //         details.set(NiyamAssess,NA);
+      //         details.set(SantRec,Rec);
+      //         details.set(TotalScore, score);
+
+
+      //         details.save(null, {
+      //           success: function(details) {
+      //             console.log("success" + name);
+      //             // alert("Your Recommendation has been submitted.");
+      //             // window.location= "balaks.html";
+      //           },
+      //           error: function(details, error) {
+      //             // Execute any logic that should take place if the save fails.
+      //             // error is a Parse.Error with an error code and message.
+      //             errorAlert('Failed to add Final Score to Database: ' + error.message);
+      //           }
+      //         });          
+
+      //     },
+      //     error: function(object, error) {
+      //         errorAlert("Error: " + error.code + " " + error.message);
+      //     }
+
+      // });
+
 
         
 

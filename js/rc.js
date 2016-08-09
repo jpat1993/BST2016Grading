@@ -150,7 +150,36 @@ $(".rcsubmit").click(function(){
             check4 = "balSabhaCheck";
             details.set(check4, true);
           }
+
+          // SAVE Final values in DB - PArse
+
+          var BA = parseInt(details.get('bs1'),10) + parseInt(details.get('bs2'),10);
+          var SM = parseInt(details.get('sm'), 10);
+          var NA = (parseInt(details.get('NAsum'), 10)) /75 * 100;
+
+          if(details.get('se2') === "x") {
+              var SE = parseInt(details.get('se1'), 10);
+          } else {
+              var SE = (parseInt(details.get('se1'), 10) + parseInt(details.get('se2'),10)) / 2 ;
+          }
           
+          var Rec = parseInt(details.get('recom'), 10);
+
+          var score = (BA/10) * 16 + (SM/25) * 20 + ((NA/4)/25) * 20 + (SE/30) * 24 + (Rec/25) * 20;
+
+          var BalSabha = "BalSabha";
+          var SabhaMukpath = "SabhaMukpath";
+          var SatsangExam = "SatsangExam";
+          var NiyamAssess = "NiyamAssess";
+          var SantRec = "SantRec";
+          var TotalScore = "TotalScore";
+
+          details.set(BalSabha,BA);
+          details.set(SabhaMukpath,SM);
+          details.set(SatsangExam,SE);
+          details.set(NiyamAssess,NA);
+          details.set(SantRec,Rec);
+          details.set(TotalScore, score);
           
           details.save(null, {
             success: function(details) {
