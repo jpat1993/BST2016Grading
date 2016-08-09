@@ -190,7 +190,7 @@ function layout(results) {
       // alert(object.id + ' - ' + object.get('email') + "name" : object.get('name'));
 
         var myDiv = document.createElement("div");
-        myDiv.setAttribute("class", 'test');
+        myDiv.setAttribute("class", 'balakRow');
 
         if(region == "SE_BST_2016") {
             var t = document.createTextNode(object.get('bkid') + ' : ' + object.get('SEcenter') + ' - ' + object.get('firstname') + ' ' + object.get('lastname'));

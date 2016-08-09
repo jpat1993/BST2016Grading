@@ -25,7 +25,6 @@ function loadRecom() {
     var values = $("#recomform").serializeArray();
     console.log(values);
     
-
     query.get(id, {
       success: function(details) {
         name = details.get('firstname');
@@ -53,18 +52,11 @@ function loadRecom() {
         // var t = document.createTextNode(name);
         div.appendChild(t);
 
-        for (var prop in values) {
-          var lookup = values[prop].name;
-          console.log(details.get(lookup));
-          console.log("#"+lookup);
 
-          getter = seva + lookup;
-          $("#"+lookup).val(details.get(getter));
-
-          // details.set(lookup, "poop");
-          // details.save();
-
-        };
+        
+        var recom = details.get('recom');
+        var recomcomment = details.get('recomcomment');
+        setValue(recom,recomcomment);
 
       },
       error: function(object, error) {
@@ -74,10 +66,12 @@ function loadRecom() {
     });
 
 
+}
 
-    
+function setValue(recom, recomcomment) {
 
-
+  $("#recom").val(recom);
+  $("#recomcomment").val(recomcomment);  
 
 }
 

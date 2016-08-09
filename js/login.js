@@ -81,7 +81,7 @@ $(".login").click(function(e){
 
 
         e.preventDefault();
-        window.location="pages/balaks.html";
+        window.location="pages/menu.html";
         
         // if(seva === "Grader1" || seva === "Grader2" || seva === "Grader3" ) {
         //     e.preventDefault();

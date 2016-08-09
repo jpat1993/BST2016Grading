@@ -682,6 +682,36 @@ textarea#RCrecomcomment {
 }*/
 
 
+/*~~~~~~~~~~~~~Portfolio-list card~~~~~~~~~~~*/
+
+
+
+.balak-card-port {
+  padding: 40px;
+  width: 40vw;
+  background-color: #F7F7F7;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-top: 2vh;
+}
+
+.balak-card-port h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2.3em;
+  margin: auto;
+}
+
+.balak-card-port input[type=text] {
+    width: 5vw;
+    height: 5vh;
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+    margin: 5px;
+}
 
 
 
@@ -820,3 +850,64 @@ label.titles {
     margin-bottom: 5px;
     font-weight: 400;
 }
+
+
+
+/*Menu Card*/
+
+.menu-card {
+  padding: 40px;
+  width: 25%;
+  background-color: #F7F7F7;
+  margin: 0 auto 10px;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  margin-top: 10vh;
+  text-align: center;
+}
+
+
+.myMenuButton {
+  -moz-box-shadow: 0px 10px 14px -7px #276873;
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #599bb3), color-stop(1, #408c99));
+  background:-moz-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background:-webkit-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background:-o-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background:-ms-linear-gradient(top, #599bb3 5%, #408c99 100%);
+  background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#599bb3', endColorstr='#408c99',GradientType=0);
+  background-color:#599bb3;
+  -moz-border-radius:8px;
+  -webkit-border-radius:8px;
+  border-radius:8px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  padding:10px 10px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #3d768a;
+  margin: 10px;
+  margin-left: 2vw;
+}
+.myMenuButton:hover {
+  background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
+  background:-moz-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-webkit-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-o-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:-ms-linear-gradient(top, #408c99 5%, #599bb3 100%);
+  background:linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#408c99', endColorstr='#599bb3',GradientType=0);
+  background-color:#408c99;
+}
+.myMenuButton:active {
+  position:relative;
+  top:1px;
+}
+
+
