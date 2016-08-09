@@ -122,13 +122,13 @@ function layout(results) {
 
         box.setAttribute("id", object.id);
 
-        if(seva ==="RC") {
-            box.setAttribute('onclick','rc(id);');
-        } else if(seva ==="P.Sant"){
-            box.setAttribute('onclick','sant(id);');
-        } else {
+        // if(seva ==="RC") {
+        //     box.setAttribute('onclick','rc(id);');
+        // } else if(seva ==="P.Sant"){
+        //     box.setAttribute('onclick','sant(id);');
+        // } else {
             box.setAttribute('onclick','portfolio(id);');
-        }
+        // }
         
         box.setAttribute('class', 'btn btn-default medium');
         box.setAttribute("style","text-align: center", "margin = '50px auto'");
@@ -503,22 +503,22 @@ function layout(results) {
     }
 }
 
-function rc(id) {
-    (function(global) {
-        global.localStorage.setItem("id", id);
-    }(window));
+// function rc(id) {
+//     (function(global) {
+//         global.localStorage.setItem("id", id);
+//     }(window));
 
-    window.location="rc.html";
-}
+//     window.location="rc.html";
+// }
 
 
-function sant(id) {
-    (function(global) {
-        global.localStorage.setItem("id", id);
-    }(window));
+// function sant(id) {
+//     (function(global) {
+//         global.localStorage.setItem("id", id);
+//     }(window));
 
-    window.location="recom.html";
-}
+//     window.location="recom.html";
+// }
 
 function portfolio(id) {
     (function(global) {
