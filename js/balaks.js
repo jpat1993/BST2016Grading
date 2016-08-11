@@ -104,6 +104,107 @@ function updateResults(results) {
 
 }
 
+
+// function download(){
+
+//     var searcher = Parse.Object.extend(DB);
+//     var query = new Parse.Query(searcher);
+
+//     query.equalTo("submitted", true);
+//     query.limit(1000);
+
+//     query.find({
+//         success: function(results) {
+//             // console.log(results);
+//             downloadCSV({ data: results});
+
+//         },
+//         error: function(error) {
+//             errorAlert("Error: " + error.code + " " + error.message);
+//         }
+//     });
+
+// }
+
+// function csv(results) {
+
+//     var csv = results.map(function(d){
+//         return JSON.stringify(d);
+//     })
+//     .join('\n') 
+//     .replace(/(^\[)|(\]$)/mg, '');
+
+//     var csvContent = "data:text/csv;charset=utf-8,";
+//     // results.forEach(function(infoArray, index){
+
+//     //    dataString = infoArray.join(",");
+//     //    csvContent += index < results.length ? dataString+ "\n" : dataString;
+
+//     // });
+
+//     var encodedUri = encodeURI(csv);
+//     var link = document.createElement("a");
+//     link.setAttribute("href", encodedUri);
+//     link.setAttribute("download", "my_data.csv");
+//     document.body.appendChild(link); // Required for FF
+
+//     link.click();
+
+// }
+
+// function convertArrayOfObjectsToCSV(args) {
+//     var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+
+//     data = args.data || null;
+//     if (data == null || !data.length) {
+//         return null;
+//     }
+
+//     columnDelimiter = args.columnDelimiter || ',';
+//     lineDelimiter = args.lineDelimiter || '\n';
+
+//     keys = Object.keys(data[0]);
+
+//     result = '';
+//     result += keys.join(columnDelimiter);
+//     result += lineDelimiter;
+
+//     data.forEach(function(item) {
+//         ctr = 0;
+//         keys.forEach(function(key) {
+//             if (ctr > 0) result += columnDelimiter;
+
+//             result += item[key];
+//             ctr++;
+//         });
+//         result += lineDelimiter;
+//     });
+
+//     return result;
+// }
+
+// function downloadCSV(args) {
+//     var data, filename, link;
+
+//     var csv = convertArrayOfObjectsToCSV({
+//         data: args.data
+//     });
+//     if (csv == null) return;
+
+//     filename = 'export.csv';
+
+//     if (!csv.match(/^data:text\/csv/i)) {
+//         csv = 'data:text/csv;charset=utf-8,' + csv;
+//     }
+//     data = encodeURI(csv);
+
+//     link = document.createElement('a');
+//     link.setAttribute('href', data);
+//     link.setAttribute('download', filename);
+//     link.click();
+// }
+
+
 function loadBalaks(){
 
     (function(global) {

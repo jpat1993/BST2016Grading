@@ -23,64 +23,429 @@
   <body onload="loadPortfolio();">
 
 <div class="portfolio-card">
+    <!-- Trigger the modal with a button -->
+    <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button> -->
+
+    <!-- Modal -->
+    <div id="myModal" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Edit Balak</h4>
+          </div>
+          <div class="modal-body">
+
+                <form class="form" id="editPort">
+                    <label for="bkid">BK ID:</label>
+                    <input id = "bkid" name="bkid" type="text" class="modalInput required">
+
+                    <label>Center: </label>
+
+                        <select id = "SEcenter" name = "SEcenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                            <option value="Albany,GA">Albany,GA</option>
+                            <option value="Atlanta">Atlanta</option>
+                            <option value="Augusta">Augusta</option>
+                            <option value="Birmingham">Birmingham</option>
+                            <option value="Calhoun">Calhoun</option>
+                            <option value="Columbia">Columbia</option>
+                            <option value="Charlotte">Charlotte</option>
+                            <option value="Chattanooga">Chattanooga</option>
+                            <option value="Dothan/Ozark">Dothan/Ozark</option>
+                            <option value="Gainesville">Gainesville</option>
+                            <option value="Greensboro">Greensboro</option>
+                            <option value="Greenville">Greenville</option>
+                            <option value="Huntsville">Huntsville</option>
+                            <option value="Jacksonville">Jacksonville</option>
+                            <option value="Knoxville">Knoxville</option>
+                            <option value="Melbourne">Melbourne</option>
+                            <option value="Memphis">Memphis</option>
+                            <option value="Miami">Miami</option>
+                            <option value="Montgomery">Montgomery</option>
+                            <option value="Myrtle Beach">Myrtle Beach</option>
+                            <option value="Nashville">Nashville</option>
+                            <option value="Orangeburg">Orangeburg</option>
+                            <option value="Orlando">Orlando</option>
+                            <option value="Perry">Perry</option>
+                            <option value="Raleigh">Raleigh</option>
+                            <option value="Savannah">Savannah</option>
+                            <option value="Tampa">Tampa</option>
+                        </select>
+
+
+                        <select id = "NEcenter" name = "NEcenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                            <option value="Albany,NY">Albany,NY</option>
+                            <option value="Allentown">Allentown</option>
+                            <option value="Atlantic City">Atlantic City</option>
+                            <option value="Boston">Boston</option>
+                            <option value="Cherry Hill">Cherry Hill</option>
+                            <option value="Clifton">Clifton</option>
+                            <option value="Delaware">Delaware</option>
+                            <option value="Edison">Edison</option>
+                            <option value="Harrisburg">Harrisburg</option>
+                            <option value="Hartford">Hartford</option>
+                            <option value="Hill Top">Hill Top</option>
+                            <option value="Jersey City">Jersey City</option>
+                            <option value="Lansdale">Lansdale</option>
+                            <option value="New York">New York</option>
+                            <option value="Northern Virginia">Northern Virginia</option>
+                            <option value="Parsippany">Parsippany</option>
+                            <option value="Philadelphia">Philadelphia</option>
+                            <option value="Princeton Garden">Princeton Garden</option>
+                            <option value="Richmond">Richmond</option>
+                            <option value="Roanoke">Roanoke</option>
+                            <option value="Robbinsville">Robbinsville</option>
+                            <option value="Scranton">Scranton</option>
+                            <option value="South Boston">South Boston</option>
+                            <option value="Springfield">Springfield</option>
+                            <option value="Syracuse">Syracuse</option>
+                            <option value="Virginia Beach">Virginia Beach</option>
+                            <option value="Warrington">Warrington</option>\
+                            <option value="Washington DC">Washington DC</option>
+                            <option value="Westchester">Westchester</option>
+                        </select>
+
+
+                        <select id = "MWcenter" name = "MWcenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                            <option value="Bloomington">Bloomington</option>
+                            <option value="Chicago">Chicago</option>
+                            <option value="Cincinnati">Cincinnati</option>
+                            <option value="Cleveland">Cleveland</option>
+                            <option value="Columbus">Columbus</option>
+                            <option value="Dayton">Dayton</option>
+                            <option value="Des Moines">Des Moines</option>
+                            <option value="Detroit">Detroit</option>
+                            <option value="Evansville">Evansville</option>
+                            <option value="Indianapolis">Indianapolis</option>
+                            <option value="Kansas City">Kansas City</option>
+                            <option value="Lexington">Lexington</option>
+                            <option value="Louisville">Louisville</option>
+                            <option value="Milwaukee">Milwaukee</option>
+                            <option value="Minneapolis">Minneapolis</option>
+                            <option value="Moline">Moline</option>
+                            <option value="Munster">Munster</option>
+                            <option value="Pittsburgh">Pittsburgh</option>
+                            <option value="St. Louis">St. Louis</option>
+                            <option value="Sterling Heights">Sterling Heights</option>
+                            <option value="Wichita">Wichita</option>
+                        </select>
+
+
+                        <select id = "SWcenter" name = "SWcenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                            <option value="Austin">Austin</option>
+                            <option value="Beaumont">Beaumont</option>
+                            <option value="Clear Lake">Clear Lake</option>
+                            <option value="Corpus Christ">Corpus Christi</option>
+                            <option value="Dallas">Dallas</option>
+                            <option value="Denver">Denver</option>
+                            <option value="Houston">Houston</option>
+                            <option value="Jackson">Jackson</option>
+                            <option value="Little Rock">Little Rock</option>
+                            <option value="Lubbock">Lubbock</option>
+                            <option value="Midland">Midland</option>
+                            <option value="New Orleans">New Orleans</option>
+                            <option value="Oklahoma City">Oklahoma City</option>
+                            <option value="San Antonio">San Antonio</option>
+                        </select>
+
+
+                        <select id = "Wcenter" name = "Wcenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                            <option value="Bakersfield">Bakersfield</option>
+                            <option value="Fresno">Fresno</option>
+                            <option value="Los Angeles">Los Angeles</option>
+                            <option value="Phoenix">Phoenix</option>
+                            <option value="Portland">Portland</option>
+                            <option value="Sacramento">Sacramento</option>
+                            <option value="San Diego">San Diego</option>
+                            <option value="San Francisco">San Francisco</option>
+                            <option value="San Jose">San Jose</option>
+                            <option value="Seattle">Seattle</option>
+                            <option value="Tucson">Tucson</option>
+                        </select>
+
+
+                        <select id = "Canadacenter" name = "Canadacenter" class="modalInput hide" >
+                           <option disabled> -- Select a Center -- </option>
+                           <option selected>Select an Option</option>
+                           <option value="Brandon">Brandon</option>
+                            <option value="Calgary">Calgary</option>
+                            <option value="Edmonton">Edmonton</option>
+                            <option value="Fort McMurry">Fort McMurry</option>
+                            <option value="Saskatoon">Saskatoon</option>
+                            <option value="Scarborough">Scarborough</option>
+                            <option value="Thompson">Thompson</option>
+                            <option value="Toronto">Toronto</option>
+                            <option value="Winnipeg">Winnipeg</option>
+                        </select>
+                    
+                    <label for="firstname">First Name:</label>
+                    <input id = "firstname" name="firstname" type="text" class="modalInput required">
+
+                    <label for="middlename">Middle Name:</label>
+                    <input id = "middlename" name="middlename" type="text" class="modalInput required">
+
+                    <label for="lastname">Last Name:</label>
+                    <input id = "lastname" name="lastname" type="text" class="modalInput required">
+
+                    <label for="birthday">Birthday:</label>
+                    <input id = "birthday" name="birthday" type="date" class="modalInput required">
+
+                    <label for="grade">Grade:</label>
+                        <select id = "grade" name = "grade" class="modalInput required" >
+                           <option disabled> -- Select Your Grade -- </option>
+                           <option selected>Select Your Grade</option>
+                            <option value="7th">7th</option>
+                            <option value="8th">8th</option>
+                        </select>
+
+                    <label for="city">City:</label>
+                    <input id = "city" name="city" type="text" class="modalInput required">
+
+                    <label for="state">State:</label>
+                    <input id = "state" name="state" type="text" class="modalInput required">
+
+                    <label for="zip">Zip Code:</label>
+                    <input id = "zip" name="zip" type="text" class="modalInput required">
+
+                    <label for="homephone">Home Phone:</label>
+                    <input id = "homephone" name="homephone" type="text" class="modalInput required">
+
+                    <label for="cell">Balak's Cell Phone:</label>
+                    <input id = "cell" name="cell" type="text" class="modalInput required">
+
+                    <label for="email">Email:</label>
+                    <input id = "email" name="email" type="text" class="modalInput required">
+
+                    <label for="father">Father:</label>
+                    <input id = "father" name="father" type="text" class="modalInput required">
+
+                    <label for="fatherPhone">Father's Mobile Number:</label>
+                    <input id = "fatherPhone" name="fatherPhone" type="text" class="modalInput required">
+
+                    <label for="fatherEmail">Father's Email:</label>
+                    <input id = "fatherEmail" name="fatherEmail" type="text" class="modalInput required">
+
+                    <label for="fatherOcc">Father's Occupation:</label>
+                    <input id = "fatherOcc" name="fatherOcc" type="text" class="modalInput required">
+
+
+                    <label for="mother">Mother:</label>
+                    <input id = "mother" name="mother" type="text" class="modalInput required">
+
+                    <label for="motherPhone">Mother's Mobile Number:</label>
+                    <input id = "motherPhone" name="motherPhone" type="text" class="modalInput required">
+
+                    <label for="motherEmail">Mother's Email:</label>
+                    <input id = "motherEmail" name="motherEmail" type="text" class="modalInput required">
+
+                    <label for="motherOcc">Mother's Occupation:</label>
+                    <input id = "motherOcc" name="motherOcc" type="text" class="modalInput required">
+
+                    <label for="compl"># Completed Terms of BST:</label>
+                        <select id = "compl" name = "compl" class="modalInput required" >
+                           <option disabled> -- Select Years -- </option>
+                           <option selected>Select Years</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                        </select>
+
+
+                </form>
+                     
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button id="editSave" type="button" class="btn btn-default" data-dismiss="modal">Save</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
     <form id ="portfolio">
         <h2 class="fs-title" id= "portTitle">BST Balak Portfolio</h2>
 <!--         <h3 class="fs-subtitle" id = "searchResults" >Please enter in the following information for : </h3>
  -->
             <div class = "topRow">
                 <div class = "colLeft">
-                    <label class = "titles-port" id="bkid">BK ID: </label>
-                    <label class = "titles-port" id="region">Region: </label>
-                    <label class = "titles-port" id="center">Center: </label>
-                    <label class = "titles-port" id="grade">Grade: </label>
+                    <label class = "titles-port" id="bkidPort">BK ID: </label>
+                    <label class = "titles-port" id="regionPort">Region: </label>
+                    <label class = "titles-port" id="centerPort">Center: </label>
+                    <label class = "titles-port" id="gradePort">Grade: </label>
+                    
+                    </br>
+                    <label class = "titles-port" id="fatherPort">Father's Name: </label>
+                    <!-- <label class = "titles-port" id="fatherPhone">Father's Mobile Number: </label>
+                    <label class = "titles-port" id="fatherEmail">Father's Email: </label> -->
+                    <label class = "titles-port" id="fatherOccPort">Father's Occupation: </label>
+
+                    <label class = "titles-port" id="motherPort">Mother's Name: </label>
+                    <!-- <label class = "titles-port" id="motherPhone">Mother's Mobile Number: </label>
+                    <label class = "titles-port" id="motherEmail">Mother's Email: </label> -->
+                    <label class = "titles-port" id="motherOccPort">Mother's Occupation: </label>
+
                 </div>
 
                 <div class = "colRight">
-                    <label class = "titles-port" id="first">First Name: </label>
-                    <label class = "titles-port" id="middle">Middle Name: </label>
-                    <label class = "titles-port" id="last">Last Name: </label>
-                    <label class = "titles-port" id="dob">Date of Birth: </label>
+                    <label class = "titles-port" id="firstPort">First Name: </label>
+                    <label class = "titles-port" id="middlePort">Middle Name: </label>
+                    <label class = "titles-port" id="lastPort">Last Name: </label>
+                    <label class = "titles-port" id="dobPort">Date of Birth: </label>
+                    </br>
+                    <label class = "titles-port" id="homephonePort">Home Phone: </label>
+                    <label class = "titles-port" id="cellPort">Balak's Cell Phone: </label>
+
+                    <button id ="editButton" type="button" class="myButton btn btn-info btn-lg" onclick="edit()">Edit Balak Data</button>
                 </div>
 
                 <div class ="picCol">
-                    <input id="myPic" type= "file" accept="image/*;capture=camera">
-                    <img id="profPic" class="img-responsive" width="304" height="236">
+                    <!-- <input id="myPic" type= "file" accept="image/*;capture=camera"> -->
+                    <img id="profPic" class="img-responsive">
+                    <input id="myPic" type="file" accept="image/*;capture=camera" />
+                    <button id ="picButton" href="#" class ="myButton btn btn-info btn-lg" style= "display :none;" onclick="document.getElementById('myPic').click(); return false;" />Reupload Picture</button>
+
+                    <!-- <input type="file" accept="image/*;capture=camera" id="reupload" class ="myButton">Reupload Picture</input> -->
 
                 </div>
             </div>
 
             <div class = "emailRow">
-                <label class = "titles-port" id="email">Email: </label>
-                <label class = "titles-port" id="addr">Address: </label>
+                <label class = "titles-port" id="emailPort">Email: </label>
+                <label class = "titles-port" id="addressPort">Address: </label>
    
             </div>
 
             <div class = "compl">
-                <label class = "titles-port" id="compl"># of Completed Terms of BST: </label> 
+                <label class = "titles-port" id="complPort"># of Completed Terms of BST: </label> 
+                <!-- <select class="input required" id = "compl" name = "compl">
+                    <option disabled>Select an Option</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option> 
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option> 
+                                           
+                </select> -->
             </div>
 
+
+
             <div class="form-group" id="topPort">
-                <div class="col-xs-6">
-                    <label class = "titles">Topic: </label>
-                    <div class="example" dir="ltr"><strong>Education:</strong></div>
-                    <textarea  id="edu" name="edu" class = "bigarea" rows="5" placeholder="List education acheivements, current academic standing GPA, clubs, etc."></textarea>
+                <label class = "titles">Background</label>
+                
+                <div class="form-group middlePort">
+                    <div class="col-xs-6">
+                        
+                        <div class="example" dir="ltr"><strong>Education:</strong></div>
+                        <textarea  id="edu" name="edu" class = "bigarea" rows="5" placeholder="List education acheivements, current academic standing GPA, clubs, etc."></textarea>
 
-                    <div class="example" dir="ltr"><strong>Satsang:</strong></div>
-                    <label class = "satsang-port" id="se1">Satsang Exam Score 1: </label>
-                    <label class = "satsang-port" id="se2">Satsang Exam Score 2: </label>
-                    <label class = "satsang-port" id="na">Niyam Assessment: </label>
-                    <label class = "satsang-port" id="bs">BST Score: </label>
-                    <textarea  id="satsang" name="satsang" class = "bigarea" rows="5" placeholder="List satsang achievements (muhkpath) and level of depth i.e. Knows entire Chesta, etc."></textarea>
-    
+                        <span class="fieldtip">List education acheivements, current academic standing GPA, clubs, etc.</span>
 
-                    <div class="example" dir="ltr"><strong>Skills:</strong></div>
-                    <textarea  id="skills" name="skills" class = "bigarea" rows="5" placeholder="List any skills/talents i.e. Tabla, Solo Singing, Art."></textarea>   
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="example" dir="ltr"><strong>Education:</strong></div>
+                    <textarea  id="eduAction" name="eduAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.
+i.e.  
+01/02: Connect balak with a kishore who is good in Algebra
+02/03: Have PC talk to parents about the importance of participating in extra-curricular activities"></textarea> 
+
+<span class="fieldtip">List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.
+i.e.  
+01/02: Connect balak with a kishore who is good in Algebra
+02/03: Have PC talk to parents about the importance of participating in extra-curricular activities</span>
+                        
+                    </div>
+
+                </div>
+                
+
+
+                <div class="form-group middlePort">
+                    <div class="col-xs-6">
+                
+
+                        <div class="example" dir="ltr"><strong>Satsang:</strong></div>
+                        
+                        <textarea  id="satsang" name="satsang" class = "bigarea" rows="5" placeholder="List satsang achievements (muhkpath) and level of depth i.e. Knows entire Chesta, etc."></textarea>
+
+                        <span class="fieldtip">List satsang achievements (muhkpath) and level of depth i.e. Knows entire Chesta, etc.</span>
+
+                        <label class = "satsang-port" id="se1">Satsang Exam Score 1: </label>
+                        <label class = "satsang-port" id="se2">Satsang Exam Score 2: </label>
+                        <label class = "satsang-port" id="na">Niyam Assessment: </label>
+                        <label class = "satsang-port" id="bs">BST Score: </label>
+
+                    </div>
+
+                    <div class="col-xs-6">
+                        <div class="example" dir="ltr"><strong>Satsang:</strong></div>
+                        <textarea  id="satsangAction" name="satsangAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea>
+                        <span class="fieldtip">List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.</span>
+
+                    </div>
+
+
+
+                </div>
+                    
+
+                <div class="form-group middlePort">
+                    <div class="col-xs-6">
+
+                        <div class="example" dir="ltr"><strong>Skills:</strong></div>
+                        <textarea  id="skills" name="skills" class = "bigarea" rows="5" placeholder="List any skills/talents i.e. Tabla, Solo Singing, Art."></textarea>
+
+                        <span class="fieldtip">List any skills/talents i.e. Tabla, Solo Singing, Art.</span>   
+
+                        <label class= "labelSmall" for="talents">Talents: </label>
+                          <select class="form-control" id="talents">
+                            <option value ="Singing">Singing</option>
+                            <option value ="Dancing">Dancing</option>
+                            <option value ="Instruments">Instruments</option>
+                            <option value ="Software">Software</option>
+                            <option value ="Photography">Photography</option>
+                            <option value ="Other">Other - Enter above</option>
+                          </select>
+                          
+
+                    </div>
+                    
+                    <div class="col-xs-6">
+
+                        <div class="example" dir="ltr"><strong>Skills:</strong></div>
+                        <textarea  id="skillsAction" name="skillsAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea> 
+
+                        <span class="fieldtip">List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.</span>     
+
+
+
+                    </div>
+
 
 
                 </div>
 
-                <div class="col-xs-6">
-                    <label class = "titles">Action Item: </label>
+                
+
+
+<!--                 <div class="col-xs-6">
+                    
                     <div class="example" dir="ltr"><strong>Education:</strong></div>
                     <textarea  id="eduAction" name="eduAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items.
 i.e.  
@@ -94,10 +459,11 @@ i.e.
                     <textarea  id="skillsAction" name="skillsAction" class = "bigarea" rows="5" placeholder="List any follow-up actions required by BST Lead/BK Sant/Sanchalak/RC/PC by date. Keep a log of all action items."></textarea>   
 
 
-                </div>
+                </div> -->
             </div>
 
-            <div class="form-group oneOn">
+
+            <div class="form-group" id="oneOn">
                 <label class = "titles">One-on-one Information: </label>
                 <div class="col-xs-6">
 
@@ -134,8 +500,8 @@ i.e.
 
 
         
-    <input type="button" id = "back" name="back" class="back" value="Back" >
-    <input type="button" name="recomsubmit" class="recomsubmit recomsubmit-submit" value="Submit Recommendation" >
+    <input type="button" id = "back" name="back" class="back" value="Home" >
+    <input type="button" name="portSubmit" class="portSubmit portSubmit-submit" value="Save Portfolio" >
 
 
 
