@@ -256,6 +256,7 @@ function loadBalaks(){
             query.ascending("NEcenter");
         }
 
+        query.limit(1000);
 
         // query.containedIn("center", test);
         // event.preventDefault();

@@ -2,6 +2,7 @@
 
 body {
   background: url(../img/background.jpg) no-repeat center center fixed; 
+  /*background-color: #c6c1e6;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,7 +47,7 @@ body {
   text-decoration:none;
   text-shadow:0px 1px 0px #3d768a;
   margin: inherit;
-  margin-left: 2vw;
+  /*margin-left: 2vw;*/
 }
 .myButton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #408c99), color-stop(1, #599bb3));
@@ -816,7 +817,7 @@ input[type="checkbox"] {
 
 .picCol {
   float: right;
-  /*border-style:groove;*/
+  width: 33%;
 }
 
 .emailRow {
@@ -948,10 +949,10 @@ label.titles {
     text-align: center;
 }
 
-img#profPic {
+/*img#profPic {
     width: 300px;
 
-}
+}*/
 
 input#myPic {
     width: 300px;
