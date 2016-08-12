@@ -76,7 +76,7 @@ function updateResults(results) {
               details.set(NiyamAssess,NA);
               details.set(SantRec,Rec);
               details.set(TotalScore, score);
-              
+
               details.save(null, {
                 success: function(details) {
                   console.log("success" + name);
@@ -88,8 +88,7 @@ function updateResults(results) {
                   // error is a Parse.Error with an error code and message.
                   errorAlert('Failed to add Final Score to Database - Update DB' + error.message);
                 }
-              });          
-
+              });
           },
           error: function(object, error) {
               errorAlert("Error: " + error.code + " " + error.message);
@@ -101,6 +100,73 @@ function updateResults(results) {
     }
 
     successAlert('Database has been Updated!');
+
+}
+
+
+
+function cleanDB(){
+
+    var searcher = Parse.Object.extend(DB);
+    var query = new Parse.Query(searcher);
+
+    query.equalTo("firstname", undefined);
+    query.limit(1000);
+
+    query.find({
+        success: function(results) {
+            // console.log(results);
+            var length = results.length;
+            cleanResults(results,length);
+
+        },
+        error: function(error) {
+            errorAlert("Error: " + error.code + " " + error.message);
+        }
+    });
+
+}
+
+
+function cleanResults(results, length) {
+
+    var tester = Parse.Object.extend(DB);
+    var query = new Parse.Query(tester);
+
+    for (var i = 0; i < results.length; i++) {
+        var object = results[i];
+
+        query.get(object.id, {
+          success: function(details) {
+              //Delete in Parse
+            // console.log(details.get('firstname'));
+
+            details.destroy({
+              success: function(details) {
+                // The object was deleted from the Parse Cloud.
+                // console.log('FOUND INVALID: ');
+              },
+              error: function(details, error) {
+                // The delete failed.
+                // error is a Parse.Error with an error code and message.
+                errorAlert('Failed to Delete undefined balak - Update DB' + error.message);
+              }
+            });
+               
+              
+                       
+
+          },
+          error: function(object, error) {
+              errorAlert("Error: " + error.code + " " + error.message);
+          }
+
+      });
+
+
+    }
+
+    successAlert(length +' Bad Entries have been deleted. Database has been Cleaned!' );
 
 }
 
