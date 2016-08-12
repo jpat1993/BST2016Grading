@@ -235,18 +235,25 @@ function loadBalaks(){
 
         if(region == "SE_BST_2016") {
             query.containedIn("SEcenter", test);
+            query.ascending("SEcenter");
         } else if (region == "NE_BST_2016") {
             query.containedIn("NEcenter", test);
+            query.ascending("NEcenter");
         } else if (region == "MW_BST_2016") {
             query.containedIn("MWcenter", test);
+            query.ascending("MWcenter");
         } else if (region == "SW_BST_2016") {
             query.containedIn("SWcenter", test);
+            query.ascending("SWcenter");
         } else if (region == "West_BST_2016") {
             query.containedIn("Wcenter", test);
+            query.ascending("Wcenter");
         } else if (region == "Canada_BST_2016") {
             query.containedIn("Canadacenter", test);
+            query.ascending("Canadacenter");
         } else {
             query.containedIn("NEcenter", test);
+            query.ascending("NEcenter");
         }
 
 
