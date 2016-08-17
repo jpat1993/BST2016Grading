@@ -314,13 +314,17 @@
 
                 <div class ="picCol">
                     <!-- <input id="myPic" type= "file" accept="image/*;capture=camera"> -->
-                    <img id="profPic" class="img-responsive">
-                    <input id="myPic" type="file" accept="image/*;capture=camera" />
+                    <div class = "pic">
+                        <img id="profPic" class="img-responsive">
+                        <input id="myPic" type="file" accept="image/*;capture=camera" />
+                    </div>
                     <button id ="picButton" href="#" class ="myButton btn btn-info btn-lg" style= "display :none;" onclick="document.getElementById('myPic').click(); return false;" />Reupload Picture</button>
 
                     <!-- <input type="file" accept="image/*;capture=camera" id="reupload" class ="myButton">Reupload Picture</input> -->
 
                 </div>
+
+                
             </div>
 
             <div class = "emailRow">
@@ -519,6 +523,7 @@ i.e.
 
 <script src="../js/jAlert-v4.min.js"></script>
 <script src="../js/jAlert-functions.min.js"></script>
+
 
 
 

@@ -204,7 +204,7 @@ function loadPortfolio() {
 
         // ParseFile photo = new Parse.File(details.get("profPic"));
         var photo = details.get('profPic');
-        
+        // console.log(photo);
         // console.log(imgUrl);
         if(photo != undefined) {
           var imgUrl = photo.url();
@@ -212,6 +212,16 @@ function loadPortfolio() {
 
           $('#picButton').show();
           $('#myPic').hide();
+
+          var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+
+          if (!isMobile.matches) {
+            $("#profPic").addClass('rotated');
+          }
+                
+
+
+
         }
 
         //se1 se2 na

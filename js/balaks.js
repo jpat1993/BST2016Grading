@@ -171,42 +171,45 @@ function cleanResults(results, length) {
 }
 
 
-// function download(){
+function download(){
 
-//     var searcher = Parse.Object.extend(DB);
-//     var query = new Parse.Query(searcher);
+    var searcher = Parse.Object.extend(DB);
+    var query = new Parse.Query(searcher);
 
-//     query.equalTo("submitted", true);
-//     query.limit(1000);
+    query.equalTo("submitted", true);
+    query.ascending("bkid");
+    query.limit(1000);
 
-//     query.find({
-//         success: function(results) {
-//             // console.log(results);
-//             downloadCSV({ data: results});
+    query.find({
+        success: function(results) {
+            // console.log(results);
+            downloadCSV({data:results});
 
-//         },
-//         error: function(error) {
-//             errorAlert("Error: " + error.code + " " + error.message);
-//         }
-//     });
+        },
+        error: function(error) {
+            errorAlert("Error: " + error.code + " " + error.message);
+        }
+    });
 
-// }
+}
 
 // function csv(results) {
 
-//     var csv = results.map(function(d){
-//         return JSON.stringify(d);
-//     })
-//     .join('\n') 
-//     .replace(/(^\[)|(\]$)/mg, '');
+//     // var csv = results.map(function(d){
+//     //     return JSON.stringify(d);
+//     // })
+//     // .join('\n') 
+//     // .replace(/(^\[)|(\]$)/mg, '');
 
 //     var csvContent = "data:text/csv;charset=utf-8,";
-//     // results.forEach(function(infoArray, index){
+//     console.log(results);
+//     console.log(results[0].name);
+//     results.forEach(function(infoArray, index){
 
-//     //    dataString = infoArray.join(",");
-//     //    csvContent += index < results.length ? dataString+ "\n" : dataString;
+//        dataString = infoArray.join(",");
+//        csvContent += index < results.length ? dataString+ "\n" : dataString;
 
-//     // });
+//     });
 
 //     var encodedUri = encodeURI(csv);
 //     var link = document.createElement("a");
@@ -218,57 +221,75 @@ function cleanResults(results, length) {
 
 // }
 
-// function convertArrayOfObjectsToCSV(args) {
-//     var result, ctr, keys, columnDelimiter, lineDelimiter, data;
+function convertArrayOfObjectsToCSV(args) {
+    var result, ctr, keys, columnDelimiter, lineDelimiter, data;
 
-//     data = args.data || null;
-//     if (data == null || !data.length) {
-//         return null;
-//     }
+    data = args.data || null;
+    if (data == null || !data.length) {
+        return null;
+    }
 
-//     columnDelimiter = args.columnDelimiter || ',';
-//     lineDelimiter = args.lineDelimiter || '\n';
+    columnDelimiter = args.columnDelimiter || ',';
+    lineDelimiter = args.lineDelimiter || '\n';
 
-//     keys = Object.keys(data[0]);
+    // console.log(Object.keys(data[0]));
+    // console.log(Object.keys(data[0].attributes));
+    keys = Object.keys(data[0].attributes);
 
-//     result = '';
-//     result += keys.join(columnDelimiter);
-//     result += lineDelimiter;
+    result = '';
+    result += keys.join(columnDelimiter);
+    result += lineDelimiter;
 
-//     data.forEach(function(item) {
-//         ctr = 0;
-//         keys.forEach(function(key) {
-//             if (ctr > 0) result += columnDelimiter;
+    // var count =0;
+    data.forEach(function(item) {
+        ctr = 0;
+        keys.forEach(function(key) {
+            if (ctr > 0) result += columnDelimiter;
+            // console.log(item.attributes[key]);
+            var str = String(item.attributes[key]);
+            var str2 = replaceAll(str,","," /comma/ ");
+            var str3 = replaceAll(str2,"\r\n"," /newLine/ ");
+            var res = replaceAll(str3,"\n"," /newLine/ ");
+            result += res;
+            ctr++;
+        });
+        // count++;
+        result += lineDelimiter;
+    });
+    // console.log(count);
 
-//             result += item[key];
-//             ctr++;
-//         });
-//         result += lineDelimiter;
-//     });
+    return result;
+}
 
-//     return result;
-// }
+function replaceAll(str, find, replace) {
+  return str.replace(new RegExp(escapeRegExp(find), 'g'), replace);
+}
 
-// function downloadCSV(args) {
-//     var data, filename, link;
+function escapeRegExp(str) {
+    return str.replace(/([.*+?^=!:${}()|\[\]\/\\])/g, "\\$1");
+}
 
-//     var csv = convertArrayOfObjectsToCSV({
-//         data: args.data
-//     });
-//     if (csv == null) return;
+function downloadCSV(args) {
+    var data, filename, link;
 
-//     filename = 'export.csv';
+    var csv = convertArrayOfObjectsToCSV({
+        data: args.data,
 
-//     if (!csv.match(/^data:text\/csv/i)) {
-//         csv = 'data:text/csv;charset=utf-8,' + csv;
-//     }
-//     data = encodeURI(csv);
+    });
+    if (csv == null) return;
 
-//     link = document.createElement('a');
-//     link.setAttribute('href', data);
-//     link.setAttribute('download', filename);
-//     link.click();
-// }
+    filename = 'export.csv';
+
+    if (!csv.match(/^data:text\/csv/i)) {
+        csv = 'data:text/csv;charset=utf-8,' + csv;
+    }
+    data = encodeURI(csv);
+
+    link = document.createElement('a');
+    link.setAttribute('href', data);
+    link.setAttribute('download', filename);
+    link.click();
+}
 
 
 function loadBalaks(){
