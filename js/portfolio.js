@@ -213,9 +213,9 @@ function loadPortfolio() {
           $('#picButton').show();
           $('#myPic').hide();
 
-          var isMobile = window.matchMedia("only screen and (max-width: 760px)");
+          var isComp = window.matchMedia("(min-width: 800px)");
 
-          if (!isMobile.matches) {
+          if (isComp.matches) {
             $("#profPic").addClass('rotated');
           }
                 
