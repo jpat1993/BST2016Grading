@@ -41,25 +41,25 @@ function loadPortfolios(){
 
         if(region == "SE_BST_2016") {
             query.containedIn("SEcenter", test);
-            query.ascending("SEcenter");
+            query.ascending("SEcenter, firstname");
         } else if (region == "NE_BST_2016") {
             query.containedIn("NEcenter", test);
-            query.ascending("NEcenter");
+            query.ascending("NEcenter, firstname");
         } else if (region == "MW_BST_2016") {
             query.containedIn("MWcenter", test);
-            query.ascending("MWcenter");
+            query.ascending("MWcenter, firstname");
         } else if (region == "SW_BST_2016") {
             query.containedIn("SWcenter", test);
-            query.ascending("SWcenter");
+            query.ascending("SWcenter, firstname");
         } else if (region == "West_BST_2016") {
             query.containedIn("Wcenter", test);
-            query.ascending("Wcenter");
+            query.ascending("Wcenter, firstname");
         } else if (region == "Canada_BST_2016") {
             query.containedIn("Canadacenter", test);
-            query.ascending("Canadacenter");
+            query.ascending("Canadacenter, firstname");
         } else {
             query.containedIn("NEcenter", test);
-            query.ascending("NEcenter");
+            query.ascending("NEcenter, firstname");
         }
 
         query.limit(1000);

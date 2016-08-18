@@ -177,7 +177,8 @@ function download(){
     var query = new Parse.Query(searcher);
 
     query.equalTo("submitted", true);
-    query.ascending("bkid");
+    query.ascending("bkid, firstname");
+    query.descending("profPic");
     query.limit(1000);
 
     query.find({
@@ -224,38 +225,43 @@ function download(){
 function convertArrayOfObjectsToCSV(args) {
     var result, ctr, keys, columnDelimiter, lineDelimiter, data;
 
+    var jsonData = JSON.stringify(args.data);
+    // console.log(jsonData);
+
     data = args.data || null;
     if (data == null || !data.length) {
         return null;
     }
 
-    columnDelimiter = args.columnDelimiter || ',';
-    lineDelimiter = args.lineDelimiter || '\n';
+    var result = Papa.unparse(jsonData);
 
-    // console.log(Object.keys(data[0]));
-    // console.log(Object.keys(data[0].attributes));
-    keys = Object.keys(data[0].attributes);
+    // columnDelimiter = args.columnDelimiter || ',';
+    // lineDelimiter = args.lineDelimiter || '\n';
 
-    result = '';
-    result += keys.join(columnDelimiter);
-    result += lineDelimiter;
+    // // console.log(Object.keys(data[0]));
+    // // console.log(Object.keys(data[0].attributes));
+    // keys = Object.keys(data[0].attributes);
 
-    // var count =0;
-    data.forEach(function(item) {
-        ctr = 0;
-        keys.forEach(function(key) {
-            if (ctr > 0) result += columnDelimiter;
-            // console.log(item.attributes[key]);
-            var str = String(item.attributes[key]);
-            var str2 = replaceAll(str,","," /comma/ ");
-            var str3 = replaceAll(str2,"\r\n"," /newLine/ ");
-            var res = replaceAll(str3,"\n"," /newLine/ ");
-            result += res;
-            ctr++;
-        });
-        // count++;
-        result += lineDelimiter;
-    });
+    // result = '';
+    // result += keys.join(columnDelimiter);
+    // result += lineDelimiter;
+
+    // // var count =0;
+    // data.forEach(function(item) {
+    //     ctr = 0;
+    //     keys.forEach(function(key) {
+    //         if (ctr > 0) result += columnDelimiter;
+    //         // console.log(item.attributes[key]);
+    //         var str = String(item.attributes[key]);
+    //         var str2 = replaceAll(str,","," /comma/ ");
+    //         var str3 = replaceAll(str2,"\r\n"," /newLine/ ");
+    //         var res = replaceAll(str3,"\n"," /newLine/ ");
+    //         result += res;
+    //         ctr++;
+    //     });
+    //     // count++;
+    //     result += lineDelimiter;
+    // });
     // console.log(count);
 
     return result;
@@ -280,15 +286,30 @@ function downloadCSV(args) {
 
     filename = 'export.csv';
 
-    if (!csv.match(/^data:text\/csv/i)) {
-        csv = 'data:text/csv;charset=utf-8,' + csv;
-    }
-    data = encodeURI(csv);
+    // if (!csv.match(/^data:text\/csv/i)) {
+    //     csv = 'data:text/csv;charset=utf-8,' + csv;
+    // }
 
-    link = document.createElement('a');
-    link.setAttribute('href', data);
-    link.setAttribute('download', filename);
-    link.click();
+    var csvData = new Blob([csv], {type: 'text/csv;charset=utf-8;'});
+    //IE11 & Edge
+    if (navigator.msSaveBlob) {
+        navigator.msSaveBlob(csvData, filename);
+    } else {
+        //In FF link must be added to DOM to be clicked
+        var link = document.createElement('a');
+        link.href = window.URL.createObjectURL(csvData);
+        link.setAttribute('download', filename);
+        document.body.appendChild(link);    
+        link.click();
+        document.body.removeChild(link);    
+    }
+
+    // data = encodeURI(csv);
+
+    // link = document.createElement('a');
+    // link.setAttribute('href', data);
+    // link.setAttribute('download', filename);
+    // link.click();
 }
 
 
@@ -322,26 +343,27 @@ function loadBalaks(){
 
         if(region == "SE_BST_2016") {
             query.containedIn("SEcenter", test);
-            query.ascending("SEcenter");
+            query.ascending("SEcenter, firstname");
         } else if (region == "NE_BST_2016") {
             query.containedIn("NEcenter", test);
-            query.ascending("NEcenter");
+            query.ascending("NEcenter, firstname");
         } else if (region == "MW_BST_2016") {
             query.containedIn("MWcenter", test);
-            query.ascending("MWcenter");
+            query.ascending("MWcenter, firstname");
         } else if (region == "SW_BST_2016") {
             query.containedIn("SWcenter", test);
-            query.ascending("SWcenter");
+            query.ascending("SWcenter, firstname");
         } else if (region == "West_BST_2016") {
-            query.containedIn("Wcenter", test);
-            query.ascending("Wcenter");
+            query.containedIn("Wcenter,", test);
+            query.ascending("Wcenter, firstname");
         } else if (region == "Canada_BST_2016") {
             query.containedIn("Canadacenter", test);
-            query.ascending("Canadacenter");
+            query.ascending("Canadacenter, firstname");
         } else {
             query.containedIn("NEcenter", test);
-            query.ascending("NEcenter");
+            query.ascending("NEcenter, firstname");
         }
+
 
         query.limit(1000);
 
