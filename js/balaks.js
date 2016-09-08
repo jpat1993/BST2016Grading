@@ -354,7 +354,7 @@ function loadBalaks(){
             query.containedIn("SWcenter", test);
             query.ascending("SWcenter, firstname");
         } else if (region == "West_BST_2016") {
-            query.containedIn("Wcenter,", test);
+            query.containedIn("Wcenter", test);
             query.ascending("Wcenter, firstname");
         } else if (region == "Canada_BST_2016") {
             query.containedIn("Canadacenter", test);

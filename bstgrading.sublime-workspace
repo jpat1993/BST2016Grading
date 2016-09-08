@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"te",
+				"test"
+			],
+			[
+				"data",
+				"dataString"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"edit",
+				"editPort"
+			],
+			[
+				"inf",
+				"infoArray"
+			],
+			[
+				"recom",
+				"recomcomment"
+			],
+			[
+				"Tot",
+				"TotalScore"
+			],
+			[
+				"San",
+				"SantRec"
+			],
+			[
+				"Sa",
+				"SatsandExam"
+			],
+			[
+				"Sabha",
+				"SabhaMukpath"
+			],
+			[
+				"my",
+				"myPic"
+			],
+			[
 				"ser",
 				"searcher"
 			],
@@ -470,50 +514,6 @@
 			[
 				"fr",
 				"freelist_print"
-			],
-			[
-				"pre",
-				"prev"
-			],
-			[
-				"prev",
-				"prevOne"
-			],
-			[
-				"budd",
-				"buddyblock"
-			],
-			[
-				"end",
-				"endWhile"
-			],
-			[
-				"want",
-				"wantedIndex"
-			],
-			[
-				"spli",
-				"splitupBlock"
-			],
-			[
-				"sp",
-				"split"
-			],
-			[
-				"wan",
-				"wantedIndex"
-			],
-			[
-				"my",
-				"my_malloc"
-			],
-			[
-				"free",
-				"freelist"
-			],
-			[
-				"SR",
-				"SBRK_SIZE"
 			]
 		]
 	},
@@ -523,7 +523,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3074,
+				"buffer_size": 3061,
 				"line_ending": "Windows"
 			}
 		},
@@ -531,7 +531,15 @@
 			"file": "js/login.js",
 			"settings":
 			{
-				"buffer_size": 3469,
+				"buffer_size": 3467,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "pages/menu.html",
+			"settings":
+			{
+				"buffer_size": 1621,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,7 +547,7 @@
 			"file": "pages/register.html",
 			"settings":
 			{
-				"buffer_size": 14400,
+				"buffer_size": 14461,
 				"line_ending": "Windows"
 			}
 		},
@@ -555,7 +563,7 @@
 			"file": "pages/balaks.html",
 			"settings":
 			{
-				"buffer_size": 2007,
+				"buffer_size": 2304,
 				"line_ending": "Windows"
 			}
 		},
@@ -563,15 +571,23 @@
 			"file": "js/balaks.js",
 			"settings":
 			{
-				"buffer_size": 19143,
+				"buffer_size": 29203,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/papaparse.js",
+			"settings":
+			{
+				"buffer_size": 35588,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "pages/rc.html",
 			"settings":
 			{
-				"buffer_size": 12341,
+				"buffer_size": 12328,
 				"line_ending": "Windows"
 			}
 		},
@@ -579,15 +595,7 @@
 			"file": "js/rc.js",
 			"settings":
 			{
-				"buffer_size": 5841,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 15513,
+				"buffer_size": 6959,
 				"line_ending": "Windows"
 			}
 		},
@@ -595,7 +603,7 @@
 			"file": "pages/recom.html",
 			"settings":
 			{
-				"buffer_size": 3020,
+				"buffer_size": 3007,
 				"line_ending": "Windows"
 			}
 		},
@@ -603,7 +611,39 @@
 			"file": "js/recom.js",
 			"settings":
 			{
-				"buffer_size": 5453,
+				"buffer_size": 5378,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 147430,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pages/portfolioList.html",
+			"settings":
+			{
+				"buffer_size": 1770,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/portfolioList.js",
+			"settings":
+			{
+				"buffer_size": 22121,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 23905,
 				"line_ending": "Windows"
 			}
 		},
@@ -611,18 +651,15 @@
 			"file": "pages/portfolio.html",
 			"settings":
 			{
-				"buffer_size": 3788,
+				"buffer_size": 28183,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Parse.initialize(\"0Fb9B6wZHGmpjRTJUoRvyFSGQl2lTOhbYNnvazTv\", \"gHDjSNQtKWNaFlquz6QCvBWiIJHVQ3CqEezuS22r\");\nParse.serverURL = 'https://parseapi.back4app.com';\n\n\n\nvar DB = \"BST2016\";\nvar id;\nvar name;\nvar getter;\nvar region;\n\n\nvar myInput = document.getElementById('myFileInput');\n\nfunction sendPic() {\n    var file = myInput.files[0];\n\n    var picSpot = document.getElementById(\"profPic\");\n    picSpot.setAttribute(\"src\", file);\n    \n    // Send file here either by adding it to a `FormData` object \n    // and sending that via XHR, or by simply passing the file into \n    // the `send` method of an XHR instance.\n}\n\nmyInput.addEventListener('change', sendPic, false);\n\n\n\nfunction loadPortfolio() {\n\n    (function(global) {\n        id =  global.localStorage.getItem(\"id\");\n        seva =  global.localStorage.getItem(\"seva\");\n        region = global.localStorage.getItem(\"region\");\n    }(window));\n\n    var tester = Parse.Object.extend(DB);\n    var query = new Parse.Query(tester);\n\n    event.preventDefault();\n\n    var values = $(\"#portfolio\").serializeArray();\n    console.log(values);\n    \n\n    query.get(id, {\n      success: function(details) {\n        name = details.get('firstname');\n        console.log(name);\n        var div = document.getElementById(\"portTitle\");\n\n        if(region == \"SE_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('SEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else if (region == \"NE_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('NEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else if (region == \"MW_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('MWcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else if (region == \"SW_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('SWcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else if (region == \"West_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('Wcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else if (region == \"Canada_BST_2016\") {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('Canadacenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        } else {\n            var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('NEcenter') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        }\n\n\n        // var t = document.createTextNode(details.get('bkid') + ' : ' + details.get('center') + ' - ' + details.get('firstname') + ' ' + details.get('lastname'));\n        // var t = document.createTextNode(name);\n        div.appendChild(t);\n\n        for (var prop in values) {\n          var lookup = values[prop].name;\n          console.log(details.get(lookup));\n          console.log(\"#\"+lookup);\n\n          getter = seva + lookup;\n          $(\"#\"+lookup).val(details.get(getter));\n\n          // details.set(lookup, \"poop\");\n          // details.save();\n\n        };\n\n      },\n      error: function(object, error) {\n          errorAlert(\"Error: \" + error.code + \" \" + error.message);\n      }\n      \n    });\n\n\n\n    \n\n\n\n}\n\n\n$(\".recomsubmit\").click(function(){\n\n  (function(global) {\n      id =  global.localStorage.getItem(\"id\");\n      seva =  global.localStorage.getItem(\"seva\");\n  }(window));\n\n\n\n  var tester = Parse.Object.extend(DB);\n  var query = new Parse.Query(tester);\n\n  var values = $(\"#recomform\").serializeArray();\n\n  console.log(values);\n\n  // check if recomment is filled out\n  if(values[0].value == \"Select an Option\") {\n    errorAlert(\"Please fill out the P.Sant Recommendation Score.\");\n    return;\n  }\n\n  // check if recomment is filled out\n  if(values[1].value == \"\") {\n    errorAlert(\"Please fill out the P.Sant Comment.\");\n    return;\n  }\n\n\n\n\n\n\n  console.log(id);\n\n  event.preventDefault();\n\n  var name;\n  var value;\n  var check;\n  query.get(id, {\n      success: function(details) {\n        var checker = true;\n        var count = 0;\n          for (var prop in values) {\n                var lookup = values[prop].name;\n                console.log(lookup);\n                console.log(\"#\"+lookup);\n\n                if(lookup === \"recomcomment\" || lookup === \"recom\") {\n\n                  console.log(prop);\n                  name = lookup;\n                  value = values[prop].value;\n                  details.set(name, value);\n                  count++;\n                  \n                }\n\n                if (lookup === \"recom\" && value !== \"0\") {\n                    check = \"santRecCheck\";\n                    details.set(check, true);\n                }\n\n          };\n\n          // if (count !== 2) {\n          //   checker = false;\n          // }\n          // check = \"santRecCheck\";\n          // details.set(check, checker);\n\n          details.save(null, {\n            success: function(details) {\n              console.log(\"success\" + name);\n              // alert(\"Your Recommendation has been submitted.\");\n              window.location= \"balaks.html\";\n            },\n            error: function(details, error) {\n              // Execute any logic that should take place if the save fails.\n              // error is a Parse.Error with an error code and message.\n              errorAlert('Failed to add Recommendation, with error code: ' + error.message);\n            }\n          });          \n\n      },\n      error: function(object, error) {\n          errorAlert(\"Error: \" + error.code + \" \" + error.message);\n      }\n\n  });\n\n\n})\n\n$(\".back\").click(function(e){\n  e.preventDefault();\n  window.location= \"balaks.html\";\n\n})",
 			"file": "js/portfolio.js",
-			"file_size": 6095,
-			"file_write_time": 131147154911044003,
 			"settings":
 			{
-				"buffer_size": 5900,
+				"buffer_size": 15296,
 				"line_ending": "Windows"
 			}
 		}
@@ -667,21 +704,34 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_precious.zip/1001fonts-precious-eula.txt",
+		"/C/Users/Jay Patel/GitHub/User1/6300Fall16jpatel75/Assignment2/myinfo.txt",
+		"/C/Users/Jay Patel/GitHub/User2/6300Fall16jpatel75/Assignment2/myinfo.txt",
+		"/C/Users/Jay Patel/GitHub/User2/6300Fall16jpatel75/Assignment2/dev3.txt",
+		"/C/Users/Jay Patel/GitHub/User2/6300Fall16jpatel75/Assignment2/mytemp.txt",
+		"/C/Users/Jay Patel/GitHub/User2/6300Fall16jpatel75/Assignment2/dev2.txt",
+		"/C/Users/Jay Patel/GitHub/User1/6300Fall16jpatel75/Assignment2/dev1.txt",
+		"/C/xampp/htdocs/BST2016Grading/js/papaparse.js",
+		"/C/xampp/htdocs/BST2016Grading/js/PapaParse-4.1.2/PapaParse-4.1.2/README.md",
+		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_asanoha.zip/asanoha-400px/readme.txt",
+		"/C/xampp/htdocs/BST2016Grading/pages/portfolio.html",
+		"/C/xampp/htdocs/BST2016Grading/index.html",
+		"/C/xampp/htdocs/BST2016Grading/pages/portfolioList.html",
+		"/C/xampp/htdocs/BST2016Grading/js/rc.js",
+		"/C/xampp/htdocs/BST2016Grading/js/bootstrap.min.js",
+		"/C/xampp/htdocs/BST2016Grading/js/recom.js",
 		"/C/xampp/htdocs/BST2016Grading/pages/centers.html",
 		"/C/xampp/htdocs/BST2016Grading/js/centers.js",
 		"/C/Users/Jay Patel/Desktop/Bal_Website/bal_db$.txt",
-		"/C/xampp/htdocs/BST2016Grading/js/rc.js",
 		"/C/xampp/htdocs/BST2016Grading/js/parse-1.6.14.min.js",
 		"/C/Users/Jay Patel/Source/Repos/houbalmandal2/houbalmandal/Scripts/angular-ui-router/release/angular-ui-router.min.js",
 		"/C/Users/Jay Patel/Source/Repos/houbalmandal2/houbalmandal/Scripts/angular-ui-router/release/angular-ui-router.js",
 		"/C/xampp/htdocs/BST2016Grading/css/style.css",
-		"/C/xampp/htdocs/BST2016Grading/js/recom.js",
 		"/C/xampp/htdocs/BST2016Grading/pages/rc.html",
 		"/C/xampp/htdocs/BST2016Grading/pages/balaks.html",
 		"/C/xampp/htdocs/BST2016Grading/pages/essay.html",
 		"/C/xampp/htdocs/BST2016Grading/pages/recom.html",
 		"/C/xampp/htdocs/BST2016Grading/bstgrading",
-		"/C/xampp/htdocs/BST2016Grading/index.html",
 		"/C/xampp/htdocs/BST2016Grading/bstgrading.sublime-workspace",
 		"/C/xampp/htdocs/BST2016Grading/js/essay.js",
 		"/C/xampp2/htdocs/BSTWebsite2/js/app.js",
@@ -781,20 +831,7 @@
 		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/README.txt",
 		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/example/NeuralNetworkEvaluationFunction.java",
 		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/build.xml",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/README.md",
-		"/C/Users/Jay Patel/Desktop/CS 4235/HWs/Lab One/nmapOutput.txt",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Coding_Problems/ConcurrentHash.java",
-		"/C/Users/Jay Patel/Documents/School Stuff/Fall 2015/CX 4140/Project/Code/simAnnealing.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/allCombos.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/reverseWords.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/isScorePossible.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/genUrls.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/mergesort.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/bitScaling.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/bitCount.java",
-		"/C/Users/Jay Patel/Desktop/Intern- Notes and Interview Help/Crack - Codes/maxHundredUrls.java",
-		"/C/Users/Jay Patel/Documents/School Stuff/Fall 2015/CX 4140/Project/FINAL TURNIN/group_C−jpatel75/Code/LSSA.java",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 1/data/winequalitywhite/winedata.arff"
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/README.md"
 	],
 	"find":
 	{
@@ -813,6 +850,20 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
+			".myButton",
+			"TODO",
+			"animate",
+			"input",
+			"recomsubmit",
+			"row-xs",
+			"row",
+			"test",
+			"success",
+			"DB",
+			".col",
+			"col.",
+			"col",
 			"titles-",
 			"centers",
 			"ba",
@@ -926,21 +977,7 @@
 			"\n        unvisited.remove(vex);",
 			"getDestination",
 			"compute",
-			"require",
-			"bootstrap_files",
-			"portfolio",
-			"@media",
-			"@\\media",
-			"@media",
-			"media",
-			"book",
-			"black",
-			"hover",
-			"h2",
-			"opacity",
-			"hr",
-			"text",
-			"animated"
+			"require"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -974,7 +1011,7 @@
 	"groups":
 	[
 		{
-			"selected": 12,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -982,15 +1019,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3074,
+						"buffer_size": 3061,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2502,
-								2456
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1010,15 +1047,15 @@
 					"file": "js/login.js",
 					"settings":
 					{
-						"buffer_size": 3469,
+						"buffer_size": 3467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								160,
-								160
+								321,
+								332
 							]
 						],
 						"settings":
@@ -1028,25 +1065,53 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 656.0,
+						"translation.y": 590.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "pages/register.html",
+					"file": "pages/menu.html",
 					"settings":
 					{
-						"buffer_size": 14400,
+						"buffer_size": 1621,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								12189,
-								12189
+								634,
+								634
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "pages/register.html",
+					"settings":
+					{
+						"buffer_size": 14461,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1731,
+								1737
 							]
 						],
 						"settings":
@@ -1056,13 +1121,13 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2543.0,
+						"translation.y": 31.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "js/register.js",
 					"settings":
 					{
@@ -1084,81 +1149,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 68.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "pages/balaks.html",
-					"settings":
-					{
-						"buffer_size": 2007,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								295,
-								295
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 193.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "js/balaks.js",
+					"file": "pages/balaks.html",
 					"settings":
 					{
-						"buffer_size": 19143,
+						"buffer_size": 2304,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								523,
-								554
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 116.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "pages/rc.html",
-					"settings":
-					{
-						"buffer_size": 12341,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1875,
-								1875
+								2185,
+								2185
 							]
 						],
 						"settings":
@@ -1168,25 +1177,108 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 36.0,
+						"translation.y": 598.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "js/rc.js",
+					"buffer": 6,
+					"file": "js/balaks.js",
 					"settings":
 					{
-						"buffer_size": 5841,
+						"buffer_size": 29203,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2585,
-								2616
+								3768,
+								3768
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1259.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "js/papaparse.js",
+					"settings":
+					{
+						"buffer_size": 35588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8725,
+								8778
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 4388.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "pages/rc.html",
+					"settings":
+					{
+						"buffer_size": 12328,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1543,
+								1543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 29.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "js/rc.js",
+					"settings":
+					{
+						"buffer_size": 6959,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6334,
+								6365
 							]
 						],
 						"settings":
@@ -1196,25 +1288,81 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 510.0,
+						"translation.y": 2184.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "css/style.css",
+					"buffer": 10,
+					"file": "pages/recom.html",
 					"settings":
 					{
-						"buffer_size": 15513,
+						"buffer_size": 3007,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15404,
-								15404
+								574,
+								574
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 273.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "js/recom.js",
+					"settings":
+					{
+						"buffer_size": 5378,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2831,
+								2831
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 797.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "css/bootstrap.css",
+					"settings":
+					{
+						"buffer_size": 147430,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26606,
+								26606
 							]
 						],
 						"settings":
@@ -1224,81 +1372,109 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 9481.0,
+						"translation.y": 21013.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "pages/recom.html",
+					"buffer": 13,
+					"file": "pages/portfolioList.html",
 					"settings":
 					{
-						"buffer_size": 3020,
+						"buffer_size": 1770,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1167,
-								1167
+								853,
+								853
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
+							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 245.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "js/recom.js",
+					"buffer": 14,
+					"file": "js/portfolioList.js",
 					"settings":
 					{
-						"buffer_size": 5453,
+						"buffer_size": 22121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								5453
+								2090,
+								2090
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1316.0,
+						"translation.y": 358.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 15,
+					"file": "css/style.css",
+					"settings":
+					{
+						"buffer_size": 23905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								19429,
+								19429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 12179.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
 					"file": "pages/portfolio.html",
 					"settings":
 					{
-						"buffer_size": 3788,
+						"buffer_size": 28183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1358,
-								1365
+								17880,
+								18037
 							]
 						],
 						"settings":
@@ -1308,25 +1484,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 319.0,
+						"translation.y": 3882.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 17,
 					"file": "js/portfolio.js",
 					"settings":
 					{
-						"buffer_size": 5900,
+						"buffer_size": 15296,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								431,
-								431
+								7521,
+								7521
 							]
 						],
 						"settings":
@@ -1336,7 +1512,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
+						"translation.y": 2532.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
