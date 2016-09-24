@@ -177,14 +177,58 @@ function download(){
     var query = new Parse.Query(searcher);
 
     query.equalTo("submitted", true);
-    query.ascending("bkid, firstname");
+    // query.ascending("bkid, firstname");
     query.descending("profPic");
+
+    var regionParse= '';
+    if(region == "SE_BST_2016") {
+        regionParse = 'SEcenter';
+        query.notEqualTo("SEcenter", "Select an Option");
+        query.ascending("SEcenter, firstname");
+    } else if (region == "NE_BST_2016") {
+        regionParse = 'NEcenter';
+        query.notEqualTo("NEcenter", "Select an Option");
+        query.ascending("NEcenter, firstname");
+    } else if (region == "MW_BST_2016") {
+        regionParse = 'MWcenter';
+        query.notEqualTo("MWcenter", "Select an Option");
+        query.ascending("MWcenter, firstname");
+    } else if (region == "SW_BST_2016") {
+        regionParse = 'SWcenter';
+        query.notEqualTo("SWcenter", "Select an Option");
+        query.ascending("SWcenter, firstname");
+    } else if (region == "West_BST_2016") {
+        regionParse = 'Wcenter';
+        query.notEqualTo("Wcenter", "Select an Option");
+        query.ascending("Wcenter, firstname");
+    } else if (region == "Canada_BST_2016") {
+        regionParse = 'Canadacenter';
+        query.notEqualTo("Canadacenter", "Select an Option");
+        query.ascending("Canadacenter, firstname");
+    } else {
+        regionParse = 'NEcenter';
+        query.notEqualTo("NEcenter", "Select an Option");
+        query.ascending("NEcenter, firstname");
+    }
+    
+
     query.limit(1000);
 
     query.find({
         success: function(results) {
             // console.log(results);
-            downloadCSV({data:results});
+
+
+            var parsedData = results.map(function(a) {
+                var keys = [a.attributes.bkid, a.attributes[regionParse], a.attributes.firstname, a.attributes.middlename, a.attributes.lastname, 
+                a.attributes.birthday, a.attributes.grade, a.attributes.address, a.attributes.city, a.attributes.state, 
+                a.attributes.zip, a.attributes.homephone, a.attributes.cell, a.attributes.email, a.attributes.father, a.attributes.fatherPhone, 
+                a.attributes.fatherEmail, a.attributes.mother, a.attributes.motherPhone, a.attributes.motherEmail, a.attributes.BalSabha,
+                a.attributes.SabhaMukpath, a.attributes.SatsangExam, a.attributes.NiyamAssess, a.attributes.SantRec, a.attributes.TotalScore];
+
+                return keys;});
+
+            downloadCSV({data:parsedData});
 
         },
         error: function(error) {
@@ -233,7 +277,13 @@ function convertArrayOfObjectsToCSV(args) {
         return null;
     }
 
-    var result = Papa.unparse(jsonData);
+    var result = Papa.unparse({
+        fields: ['BKID', 'Center', 'First Name', 'Middle Name', 'Last Name','Birthday', 'Grade', 'Address', 'City', 'State', 
+                'Zip', 'Homephone', 'Cell', 'Email', 'Father', 'Father Phone', 'Father Email', 'Mother', 'Mother Phone', 'Mother Email',
+                'Bal Sabha Score', 'Sabha Mukhpath Score', 'Satsang Exam Score', 'Niyam Assessment Score', 'Sant Recommendation Score', 'Total Score'], 
+        data: jsonData
+
+        });
 
     // columnDelimiter = args.columnDelimiter || ',';
     // lineDelimiter = args.lineDelimiter || '\n';

@@ -571,7 +571,7 @@
 			"file": "js/balaks.js",
 			"settings":
 			{
-				"buffer_size": 29203,
+				"buffer_size": 29202,
 				"line_ending": "Windows"
 			}
 		},
@@ -704,6 +704,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Jay Patel/GitHub/6300Fall16Team22/TeamInfo.txt",
 		"/C/Users/Jay Patel/AppData/Local/Temp/Temp1_precious.zip/1001fonts-precious-eula.txt",
 		"/C/Users/Jay Patel/GitHub/User1/6300Fall16jpatel75/Assignment2/myinfo.txt",
 		"/C/Users/Jay Patel/GitHub/User2/6300Fall16jpatel75/Assignment2/myinfo.txt",
@@ -830,8 +831,7 @@
 		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/project2/readme.txt",
 		"/C/Users/Jay Patel/Desktop/CS 4641/old/CS 4641/CS 4641/Project 2/Sample Project 2/kuppuluri3/ANN/src/README.txt",
 		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/src/opt/example/NeuralNetworkEvaluationFunction.java",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/build.xml",
-		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/README.md"
+		"/C/Users/Jay Patel/Desktop/CS 4641/HW 2/ABAGAIL-master/ABAGAIL-master/build.xml"
 	],
 	"find":
 	{
@@ -850,6 +850,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"Wcenter",
+			"window.location= \"balaks.html\";",
+			"Wcenter",
 			"img",
 			".myButton",
 			"TODO",
@@ -974,10 +977,7 @@
 			"db_connect",
 			";\n",
 			"{\n",
-			"\n        unvisited.remove(vex);",
-			"getDestination",
-			"compute",
-			"require"
+			"\n        unvisited.remove(vex);"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1011,7 +1011,7 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 16,
 			"sheets":
 			[
 				{
@@ -1138,8 +1138,8 @@
 						"selection":
 						[
 							[
-								447,
-								447
+								218,
+								218
 							]
 						],
 						"settings":
@@ -1177,7 +1177,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 598.0,
+						"translation.y": 273.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1187,15 +1187,15 @@
 					"file": "js/balaks.js",
 					"settings":
 					{
-						"buffer_size": 29203,
+						"buffer_size": 29202,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3768,
-								3768
+								12132,
+								12139
 							]
 						],
 						"settings":
@@ -1205,7 +1205,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1259.0,
+						"translation.y": 5138.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1277,8 +1277,8 @@
 						"selection":
 						[
 							[
-								6334,
-								6365
+								1374,
+								1381
 							]
 						],
 						"settings":
@@ -1288,7 +1288,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2184.0,
+						"translation.y": 224.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1333,8 +1333,8 @@
 						"selection":
 						[
 							[
-								2831,
-								2831
+								1803,
+								1810
 							]
 						],
 						"settings":
@@ -1344,7 +1344,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 797.0,
+						"translation.y": 211.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1417,8 +1417,8 @@
 						"selection":
 						[
 							[
-								2090,
-								2090
+								1795,
+								1802
 							]
 						],
 						"settings":
@@ -1428,7 +1428,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 358.0,
+						"translation.y": 341.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1473,8 +1473,8 @@
 						"selection":
 						[
 							[
-								17880,
-								18037
+								7987,
+								7994
 							]
 						],
 						"settings":
@@ -1484,7 +1484,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3882.0,
+						"translation.y": 320.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1501,8 +1501,8 @@
 						"selection":
 						[
 							[
-								7521,
-								7521
+								3219,
+								3226
 							]
 						],
 						"settings":
@@ -1512,7 +1512,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2532.0,
+						"translation.y": 1225.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
