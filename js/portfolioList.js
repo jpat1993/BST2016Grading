@@ -11,6 +11,11 @@ var seva;
 var region;
 
 
+function changeCenter(){
+    window.location= "centers.html";
+
+}
+
 function loadPortfolios(){
 
     (function(global) {

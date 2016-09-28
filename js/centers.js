@@ -73,7 +73,7 @@ $(".register").click(function(e){
     user.save(null, {
         success: function(user) {
         // Hooray! Let them use the app now.
-        window.location="balaks.html";
+        window.location="menu.html";
       },
       error: function(user, error) {
         // Show the error message somewhere and let the user try again.
